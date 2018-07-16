@@ -1,0 +1,18 @@
+option java_package = "com.leyou.common.protobuf.card.zhuomazi";
+option java_outer_classname = "CatchPockTips_pb"; 
+
+import "CardInfo.proto";
+
+message PopCardTips {
+	repeated CardInfo cardInfo = 1;	  // 牌的信息
+}
+
+message CatchPockTipsRes {
+    optional int32 roleIndex   = 1;   // 玩家索引
+	optional int32 buttonTips  = 2;   // 0 没有牌大过上家， 1 不能不出牌  
+	repeated PopCardTips tips  = 3;   // 玩家出牌提示列表
+}
+
+
+
+ 

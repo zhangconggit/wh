@@ -1,0 +1,23 @@
+syntax = "proto2";
+option java_package = "com.leyou.common.protobuf.BloodFight"; 
+option java_outer_classname = "BloodFightAllEndShow_pb"; 
+
+message BloodFightAllEndInfo{
+	optional int64 roleIndex = 1;
+	optional int32 roleId = 2; //  
+	optional string name = 3; // 
+	optional int32 ziMoTime = 4; // 自摸次数
+	optional int32 jiePaoTime = 5; // 接炮次数
+	optional int32 dianPaoTime = 6; // 点炮次数
+	optional int32 anGangTime = 7; // 暗杠次数
+	optional int32 mingGangTime = 8; // 明杠次数
+	optional int32 chaTime = 9; // 查大叫次数
+	optional int32 jiFen = 10; //
+}
+
+
+
+message BloodFightAllEndShowRes {
+	repeated BloodFightAllEndInfo allEndInfos = 1; // 每人结算的集合
+	optional int32 RoomMasterUid = 2;
+}

@@ -1,0 +1,15 @@
+option java_package = "com.leyou.common.protobuf.card.jinhua";
+option java_outer_classname = "GoldVSCard_pb"; 
+
+message GoldVSCardReq{
+	optional int32 targetIndex = 1; //比牌对方的索引
+}
+
+message GoldVSCardRes {
+    optional int32 winIndex 	= 1;  	// 赢的玩家索引
+	optional int32 loseIndex	= 2;  	// 输的玩家索引
+	optional int32 zhudongRoleIndex	= 3;  	// 主动比牌的玩家索引
+	optional int32 nextOpIndex = 4;   // 下一个人的索引
+	optional int32 lunshu = 5;   // 轮数
+}
+

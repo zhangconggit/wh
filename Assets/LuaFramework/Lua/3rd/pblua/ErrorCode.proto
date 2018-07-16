@@ -1,0 +1,8 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "ErrorCode_pb"; 
+
+
+
+message ErrorCodeRes {
+    required int32 errorCode = 1; // 错误码
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "PlayChess_pb"; 
+
+import "ChessInfo.proto";
+
+message PlayChessReq{
+	required int32 chessId = 1; // 要打的牌编号
+}
+
+message PlayChessRes {
+	optional int32 roleIndex = 1;
+	optional ChessInfo chessInfo = 2;
+}
+
+
+
+ 

@@ -1,0 +1,15 @@
+option java_package = "com.leyou.common.protobuf.BloodFight"; 
+option java_outer_classname = "ReferCard_pb"; 
+
+import "ChessInfo.proto";
+
+message ReferCardInfo{
+	optional int64 roleId = 1;		//玩家ID
+	optional int32 index = 2;		//玩家索引
+	repeated ChessInfo referChessInfo = 3; // 推荐牌组
+	repeated ChessInfo noReferChessInfo = 4; // 不可用牌组
+}
+
+message ReferCardRes {
+	repeated ReferCardInfo cardInfo = 1; // list，换牌信息
+}

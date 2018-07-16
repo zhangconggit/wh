@@ -1,0 +1,23 @@
+option java_package = "com.leyou.common.protobuf.card.doudizhu";
+option java_outer_classname = "OpenCard_pd"; 
+
+import "CardInfo.proto";
+
+message openCardReq {
+	optional bool open = 1;	  // 是否明牌开始 true 明牌 false 不明牌
+	optional int32 openMultiple = 2;	  // 明牌倍数
+
+}
+
+message openCardRes {
+	optional int32 openUserIndex = 1;	  // 明牌玩家index
+	optional int32 currentMultiple = 2;	  // 当前倍数
+	optional bool open = 3;				//是否明牌
+	repeated CardInfo cardInfo = 4;	  // 牌的信息
+
+}
+
+
+
+
+ 

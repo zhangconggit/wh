@@ -1,0 +1,33 @@
+option java_package = "com.leyou.common.protobuf.vs"; 
+option java_outer_classname = "VsCacheData_pb"; 
+
+// 比赛场玩家数据
+message VsCacheDataInfo {
+	optional int32 index = 1;
+	optional int64 roleId = 2;
+	optional string name = 3;
+	optional string ip = 4;
+	optional string headImg = 5;
+	optional int32 gender = 6; // 性别
+	optional int64 diamond = 7; // 钻石数
+	optional int32 curPaiMing = 8; // 当前排名
+	optional int32 jifen = 9; // 积分
+}
+
+// 麻将房间信息
+message VsMahjongInfo {
+	optional int32 roomNum = 1;
+	optional bool zimohu = 2; 
+	optional bool feng = 3; 
+	optional bool hongzhong = 4; 
+	optional int32 yu = 5;
+	optional int32 jushu = 6;
+	repeated VsCacheDataInfo vsCacheDataInfo = 7;
+	optional int32 lun = 8;
+	optional int32 vscount = 9; // 比赛人数
+}
+
+message VsCacheDataRes {
+	optional int32 gameType = 1; // 1=麻将 2=十点半 3=炸金花
+	optional bytes dataRes = 2;
+}

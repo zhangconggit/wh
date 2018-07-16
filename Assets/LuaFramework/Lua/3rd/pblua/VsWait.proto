@@ -1,0 +1,11 @@
+option java_package = "com.leyou.common.protobuf.vs"; 
+option java_outer_classname = "VsWait_pb"; 
+
+// 每轮结束等待面板
+message VsWaitRes {
+	optional int32 rank = 1; // 我的排名
+	optional int32 leftRoom = 2; // 剩余桌
+	optional int32 curLun = 3; // 当前轮数
+	optional int32 vsCount = 4; // 比赛总人数
+	optional int32 vsType = 5; // 比赛类型
+}

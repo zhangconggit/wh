@@ -1,0 +1,6 @@
+option java_package = "com.leyou.common.protobuf.chess.wuziqi";
+option java_outer_classname = "GameStart_pb";  
+
+message GameStartRes {
+	optional bool gameStart = 1; //true 代表游戏开始了
+}

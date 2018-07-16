@@ -1,0 +1,15 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "ShareSign_pb"; 
+
+message SignRes{ 
+  optional int32 type = 1;  //0 谢谢参与 1金币 2元宝 3房卡 4物品
+  optional int32 itemID= 2;  //此处填写具体的物品ID
+  optional int32 quantity= 3; //数量
+  optional bool isSign= 4; //今天是否签到 true 已签到 false 未签到
+}
+
+message LuckDraw{
+  optional int32 type = 1;  //0 谢谢参与 1金币 2元宝 3房卡 4物品
+  optional int32 quantity= 2;  //数量
+} 
+

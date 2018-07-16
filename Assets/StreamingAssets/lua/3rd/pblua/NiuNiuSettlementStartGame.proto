@@ -1,0 +1,14 @@
+option java_package = "com.leyou.common.protobuf.card.niuniu";
+option java_outer_classname = "NiuNiuSettlementStartGame_pb"; 
+
+message NiuNiuSettlementStartGameRes {
+	optional int32 roleIndex = 1; //谁点了开始游戏
+    optional bool allStart = 2; // true等于所有人都点了开始游戏
+	repeated int32 alreadyIndex = 3; // 点了开始游戏的玩家index
+	optional int32 leaderIndex = 4; // 庄的索引
+	optional int32 currJu=5;//当前局数
+}
+
+
+
+ 

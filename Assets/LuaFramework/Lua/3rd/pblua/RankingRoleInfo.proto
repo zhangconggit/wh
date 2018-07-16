@@ -1,0 +1,23 @@
+option java_package = "com.leyou.common.protobuf";
+option java_outer_classname = "RankingRoleInfo_pb";
+
+message RankingRoleInfoReq{
+	required int64 roleId = 1;// 用户id
+}
+
+message RankingRoleInfoRes{
+	optional int64 roleId = 1; //用户ID
+	optional string name = 2;  //用户名称
+	optional string ip = 3;      // 用户IP
+	optional string headImg = 4; 
+	optional int32 gender = 5; // 性别
+	optional int64 diamond = 6; // 钻石数
+	optional int64 goldcoin = 7; // 金币数
+	optional int64 wing = 8; // 元宝数
+	optional string singleSign= 9; //个性签名
+}
+
+
+
+
+ 

@@ -1,0 +1,24 @@
+option java_package = "com.leyou.common.protobuf.card.zhuomazi";
+option java_outer_classname = "CatchTotalSettlement_pb"; 
+
+message CatchTotalSettlementInfo{
+    optional int64 	roleId 		= 1;	// 玩家id
+    optional int32 	roleIndex 	= 2;	// 玩家索引
+    optional string roleName 	= 3;	// 玩家昵称
+    optional int32 	danJuMax 	= 4;	// 单局最高
+    optional int32 	boomNum	    = 5;	// 炸弹数量
+    optional int32 	winJuShu 	= 6;	// 胜利局数
+    optional int32 	lostJuShu 	= 7;	// 失败局数
+    optional int32 	roleFenShu 	= 8;	// 玩家分数
+}
+
+message CatchTotalSettlementRes {
+	optional int64 roomNum 		= 1; 	// 房间号
+    optional int32 totalJushu 	= 2; 	// 总局数
+    repeated CatchTotalSettlementInfo totalSettlementInfo = 3; // list，总结算信息
+    optional int64 endTime = 4; //结算结束时间
+}
+
+
+
+ 

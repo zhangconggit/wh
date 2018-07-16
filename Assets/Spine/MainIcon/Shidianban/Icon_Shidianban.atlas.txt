@@ -1,0 +1,104 @@
+
+Icon_Shidianban.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/1
+  rotate: true
+  xy: 736, 205
+  size: 48, 153
+  orig: 48, 153
+  offset: 0, 0
+  index: -1
+images/10
+  rotate: false
+  xy: 681, 97
+  size: 78, 85
+  orig: 78, 85
+  offset: 0, 0
+  index: -1
+images/11
+  rotate: false
+  xy: 490, 38
+  size: 50, 38
+  orig: 50, 38
+  offset: 0, 0
+  index: -1
+images/12
+  rotate: false
+  xy: 578, 184
+  size: 156, 69
+  orig: 156, 69
+  offset: 0, 0
+  index: -1
+images/2
+  rotate: false
+  xy: 978, 230
+  size: 40, 23
+  orig: 40, 23
+  offset: 0, 0
+  index: -1
+images/3
+  rotate: false
+  xy: 736, 185
+  size: 48, 18
+  orig: 48, 18
+  offset: 0, 0
+  index: -1
+images/4
+  rotate: false
+  xy: 490, 78
+  size: 86, 175
+  orig: 86, 175
+  offset: 0, 0
+  index: -1
+images/5
+  rotate: false
+  xy: 542, 47
+  size: 34, 29
+  orig: 34, 29
+  offset: 0, 0
+  index: -1
+images/6
+  rotate: false
+  xy: 578, 52
+  size: 27, 26
+  orig: 27, 26
+  offset: 0, 0
+  index: -1
+images/7
+  rotate: false
+  xy: 578, 80
+  size: 101, 102
+  orig: 101, 102
+  offset: 0, 0
+  index: -1
+images/8
+  rotate: false
+  xy: 891, 225
+  size: 43, 28
+  orig: 43, 28
+  offset: 0, 0
+  index: -1
+images/9
+  rotate: true
+  xy: 936, 226
+  size: 27, 40
+  orig: 27, 40
+  offset: 0, 0
+  index: -1
+images/guangquan
+  rotate: false
+  xy: 255, 20
+  size: 233, 233
+  orig: 233, 233
+  offset: 0, 0
+  index: -1
+images/huan
+  rotate: false
+  xy: 2, 2
+  size: 251, 251
+  orig: 251, 251
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,10 @@
+option java_package = "com.leyou.common.protobuf.vs"; 
+option java_outer_classname = "VsEnd_pb"; 
+
+// 比赛结束面板
+message VsEndRes {
+	optional int32 endType = 1; // 结束类型 1=主动放弃结束 2=排名结束
+	optional int32 rank = 2; // 当前排名
+	optional int32 rewardType = 3; // 当前奖励类型
+	optional int32 rewardCount = 4; // 当前奖励数量
+}

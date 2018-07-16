@@ -1,0 +1,19 @@
+option java_package = "com.leyou.common.protobuf.BloodFight"; 
+option java_outer_classname = "CreateBloodFightRoom_pb"; 
+
+message CreateBloodFightRoomReq{
+	required int32 jushu = 1;// 局数8 16
+	optional int32 baseScore = 2;// 底分 1 2 5 10
+	optional int32 fanshu = 3;// 番数 2 3 4
+	optional int32 PlayMethodZimo =	4;//玩法 11代表自摸加底 12代表自摸加番
+	optional int32 PlayMethodDiangang =	5;//玩法 13代表点杠花-自摸 14代表点杠花-点炮
+	optional int32 replaceCard	=	6;//换三张0代表不换 1代表换
+	optional string cardType	=	7;//牌型 15代表幺九将对 16代表门清中张 17代表天地胡
+}
+
+message CreateBloodFightRoomRes {
+	optional int32 roomNum = 1; // 房间号
+	optional int32 moneyType = 2; // 1=金币场 2=元宝场 3=房卡
+	optional int32 baseNum = 3; // 底金
+	optional int32 qualified = 4; // 合格金额
+}

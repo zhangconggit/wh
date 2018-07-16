@@ -1,0 +1,12 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "InitChesses_pb"; 
+
+import "ChessInfo.proto";
+
+message InitChessesRes {
+	optional int32 zhuang = 1; // 庄的索引
+    optional int32 zhuaIndex = 2; // 在谁那开始抓牌索引
+    optional int32 shaiziMin = 3; // 骰子最小数（从第几个开始抓牌）
+    optional int32 shaiziMax = 4; // 骰子最大值
+	repeated ChessInfo chessInfo = 5; // 牌的列表
+}

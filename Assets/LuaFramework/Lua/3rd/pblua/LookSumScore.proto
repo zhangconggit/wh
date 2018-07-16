@@ -1,0 +1,19 @@
+option java_package = "com.leyou.common.protobuf.mahjong";
+option java_outer_classname = "LookSumScore_pb"; 
+
+message LookSumScoreInfo{
+	optional int64 roleId = 1;
+	optional int32 index = 2;
+	optional string name = 3;
+	optional int32 zimoCount = 4;
+	optional int32 jiepaoCount = 5;
+	optional int32 dianpaoCount = 6;
+	optional int32 angangCount = 7;
+	optional int32 minggangCount = 8;
+	optional int32 jifen = 9;
+}
+
+message LookSumScoreRes {
+	repeated LookSumScoreInfo sumScoreInfo = 1; // list，总战绩信息
+	optional int64 endTime = 2; //结算结束时间
+}

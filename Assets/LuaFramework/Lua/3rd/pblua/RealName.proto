@@ -1,0 +1,17 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "RealName_pb"; 
+
+message RealNameReq{
+	optional string name = 1;//姓名
+	optional string idNo = 2;//身份证号码
+	optional string mobile = 3;//手机号码
+}
+
+message RealNameRes{ 
+	required int64 roleId = 1; //roleId
+	optional string name = 2;//姓名
+	optional string idNo = 3;//身份证号码
+	optional string mobile = 4;//手机号码
+  	optional int32 successStatus = 5;//认证状态 1成功 2参数不全 3身份证或姓名不匹配 4电话号码不正确
+}
+

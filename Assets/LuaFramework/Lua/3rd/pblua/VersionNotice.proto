@@ -1,0 +1,12 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "VersionNotice_pb"; 
+
+message VersionNoticeInfo{
+	optional int32 type = 1; // 版本公告类型 1=版本 2=官方
+	optional string content = 2;
+	optional string noticeV = 3; // 公告的版本号
+}
+
+message VersionNoticeRes {
+	repeated VersionNoticeInfo versionNoticeInfo = 1;
+}

@@ -1,0 +1,15 @@
+option java_package = "com.leyou.common.protobuf.card.tenhalf";
+option java_outer_classname = "TenHalfIsBanker_pb"; 
+
+message TenHalfIsBankerReq   {
+    optional bool isBanker = 1; //是否当庄
+}
+
+message TenHalfIsBankerRes {
+    optional bool isBanker = 1;//是否当庄(为true就发牌,false弹出抢庄)
+    optional int32 zhuangIndex = 2; //庄的索引
+}
+
+
+
+ 

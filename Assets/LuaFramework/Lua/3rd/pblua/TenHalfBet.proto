@@ -1,0 +1,15 @@
+option java_package = "com.leyou.common.protobuf.card.tenhalf";
+option java_outer_classname = "TenHalfBet_pb"; 
+
+message TenHalfBetReq{
+    optional int32 betConut = 1; //下注数
+}
+
+message TenHalfBetRes {
+    optional int32 roleIndex = 1;  // 玩家索引
+    optional int32 betConut = 2;   //下注数
+}
+
+
+
+ 

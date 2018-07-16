@@ -1,0 +1,20 @@
+option java_package = "com.leyou.common.protobuf.vs"; 
+option java_outer_classname = "VsLog_pb"; 
+
+// 比赛日志
+message VsLogReq {
+	optional int32 vsType = 1; // 比赛类型 1=房卡 2=金币
+}
+
+
+message VsLogInfo {
+	optional int32 vsType = 1; // 比赛类型
+	optional int32 vsCount = 2; // 比赛人数
+	optional int32 rank = 3; // 排名
+	optional int32 rewardCount = 4; // 奖励数量 <=0 没有奖励
+	optional int64 vsTime = 5; // 比赛时间
+}
+
+message VsLogRes {
+	repeated VsLogInfo vsLogInfo = 1;
+}

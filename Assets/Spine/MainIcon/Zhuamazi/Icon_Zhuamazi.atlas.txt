@@ -1,0 +1,118 @@
+
+Icon_Zhuamazi.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/erduoy
+  rotate: true
+  xy: 237, 159
+  size: 97, 34
+  orig: 97, 34
+  offset: 0, 0
+  index: -1
+images/erduoz
+  rotate: true
+  xy: 255, 258
+  size: 77, 58
+  orig: 77, 58
+  offset: 0, 0
+  index: -1
+images/guangquan
+  rotate: false
+  xy: 2, 24
+  size: 233, 233
+  orig: 233, 233
+  offset: 0, 0
+  index: -1
+images/huan
+  rotate: false
+  xy: 2, 259
+  size: 251, 251
+  orig: 251, 251
+  offset: 0, 0
+  index: -1
+images/p1
+  rotate: false
+  xy: 237, 107
+  size: 42, 50
+  orig: 42, 50
+  offset: 0, 0
+  index: -1
+images/p2
+  rotate: true
+  xy: 273, 160
+  size: 39, 55
+  orig: 39, 55
+  offset: 0, 0
+  index: -1
+images/p3
+  rotate: false
+  xy: 281, 132
+  size: 22, 26
+  orig: 22, 26
+  offset: 0, 0
+  index: -1
+images/p4
+  rotate: false
+  xy: 237, 66
+  size: 36, 39
+  orig: 36, 39
+  offset: 0, 0
+  index: -1
+images/st
+  rotate: true
+  xy: 273, 201
+  size: 55, 54
+  orig: 55, 54
+  offset: 0, 0
+  index: -1
+images/tou
+  rotate: false
+  xy: 332, 357
+  size: 80, 82
+  orig: 80, 82
+  offset: 0, 0
+  index: -1
+images/xs
+  rotate: false
+  xy: 417, 445
+  size: 74, 65
+  orig: 74, 65
+  offset: 0, 0
+  index: -1
+images/yan
+  rotate: false
+  xy: 255, 337
+  size: 75, 102
+  orig: 75, 102
+  offset: 0, 0
+  index: -1
+images/ygb
+  rotate: false
+  xy: 332, 334
+  size: 53, 21
+  orig: 53, 21
+  offset: 0, 0
+  index: -1
+images/zgb
+  rotate: false
+  xy: 237, 27
+  size: 32, 37
+  orig: 32, 37
+  offset: 0, 0
+  index: -1
+images/zi
+  rotate: false
+  xy: 255, 441
+  size: 160, 69
+  orig: 160, 69
+  offset: 0, 0
+  index: -1
+images/zuos
+  rotate: true
+  xy: 493, 475
+  size: 35, 17
+  orig: 35, 17
+  offset: 0, 0
+  index: -1

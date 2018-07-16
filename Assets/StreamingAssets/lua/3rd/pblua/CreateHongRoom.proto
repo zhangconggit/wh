@@ -1,0 +1,23 @@
+option java_package = "com.leyou.common.protobuf.mahjong"; 
+option java_outer_classname = "CreateHongRoom_pb"; 
+
+message CreateHongRoomReq{
+	required int32 jushu 		= 1; // 局数
+	optional int32 zimohu 		= 2; // 是否只能自摸胡 1=自摸胡 2=点炮胡
+	optional int32 feng 		= 3; // 是否要风牌 1=是  2=否
+	optional int32 hongzhong 	= 4; // 是否要红中赖子  1=是 2=否
+	optional int32 yu 			= 5; // 下的鱼数
+	optional int32 roleNum 		= 6; // 人数
+	optional int32 robot 		= 7; // 是否需要机器人 
+	optional int32 modeType 	= 8; // 模式  1=AA制  2=老板模式
+	optional int32 bihu			= 9; // 点炮必胡 1=是 2=否
+}
+
+message CreateHongRoomRes {
+	optional int32 roomNum = 1; // 房间号
+	optional int32 basenum = 2; // 底金
+	optional int64 qualified = 3; // 合格金额
+	optional int32 moneyType = 4; //金币OR元宝 1金币 2元宝	
+	optional int32 mcreenings = 5; //1初级场 2中级场 3高级场.....
+	
+}

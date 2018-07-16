@@ -1,0 +1,62 @@
+
+Icon_Niuniu.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+biyan
+  rotate: true
+  xy: 634, 95
+  size: 26, 15
+  orig: 26, 15
+  offset: 0, 0
+  index: -1
+eryou
+  rotate: false
+  xy: 486, 36
+  size: 28, 16
+  orig: 28, 16
+  offset: 0, 0
+  index: -1
+erzuo
+  rotate: false
+  xy: 253, 2
+  size: 26, 19
+  orig: 26, 19
+  offset: 0, 0
+  index: -1
+guangquan
+  rotate: false
+  xy: 253, 23
+  size: 231, 231
+  orig: 231, 231
+  offset: 0, 0
+  index: -1
+huan1
+  rotate: false
+  xy: 2, 5
+  size: 249, 249
+  orig: 249, 249
+  offset: 0, 0
+  index: -1
+shenzi
+  rotate: false
+  xy: 486, 123
+  size: 171, 131
+  orig: 171, 131
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 659, 157
+  size: 103, 97
+  orig: 103, 97
+  offset: 0, 0
+  index: -1
+zi
+  rotate: false
+  xy: 486, 54
+  size: 146, 67
+  orig: 146, 67
+  offset: 0, 0
+  index: -1

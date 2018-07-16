@@ -1,0 +1,55 @@
+
+Icon_Tuidaohu.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/guangquan
+  rotate: false
+  xy: 255, 20
+  size: 233, 233
+  orig: 233, 233
+  offset: 0, 0
+  index: -1
+images/hua
+  rotate: false
+  xy: 2, 2
+  size: 251, 251
+  orig: 251, 251
+  offset: 0, 0
+  index: -1
+images/mj
+  rotate: true
+  xy: 490, 4
+  size: 105, 118
+  orig: 105, 118
+  offset: 0, 0
+  index: -1
+images/saizi1
+  rotate: false
+  xy: 779, 195
+  size: 56, 58
+  orig: 56, 58
+  offset: 0, 0
+  index: -1
+images/sazi2
+  rotate: false
+  xy: 615, 118
+  size: 59, 63
+  orig: 59, 63
+  offset: 0, 0
+  index: -1
+images/z1
+  rotate: false
+  xy: 615, 183
+  size: 162, 70
+  orig: 162, 70
+  offset: 0, 0
+  index: -1
+images/zd
+  rotate: false
+  xy: 490, 111
+  size: 123, 142
+  orig: 123, 142
+  offset: 0, 0
+  index: -1

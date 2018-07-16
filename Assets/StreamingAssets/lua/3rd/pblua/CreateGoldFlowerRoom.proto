@@ -1,0 +1,20 @@
+option java_package = "com.leyou.common.protobuf.card.jinhua";
+option java_outer_classname = "CreateGoldFlowerRoom_pb"; 
+
+message CreateGoldFlowerRoomReq{
+	required int32 jinHuaTotal 			= 1; 	// 总局数
+	required int32 jinHuaPlayMethond 	= 2; 	// 玩法 1比大小 2比花色 3全比
+	optional bool  isLeopard			= 3;	// 豹子额外奖励
+	optional bool  isDouble				= 4;	// 比牌双倍开
+	required int32  isTop				= 5;	// 封顶
+	required int32  isCompare			= 6;	// 比牌
+	required int32  isGuess				= 7;	// 闷牌
+}
+
+message CreateGoldFlowerRoomRes {
+	optional int32 roomNum = 1; // 房间号
+	optional int32 baseNum = 2; // 底金
+	optional int32 qualified = 3; // 合格金额
+	optional int32 moneyType = 4; //金币OR元宝 1金币 2元宝	
+	optional int32 mcreenings = 5; //1初级场 2中级场 3高级场 4......
+}

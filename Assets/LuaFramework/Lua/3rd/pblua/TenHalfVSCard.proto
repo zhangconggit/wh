@@ -1,0 +1,15 @@
+option java_package = "com.leyou.common.protobuf.card.tenhalf";
+option java_outer_classname = "TenHalfVSCard_pb"; 
+
+import "CardInfo.proto";
+
+message VSRoleInfo{
+    optional int32 roleIndex = 1;   // 玩家索引
+    repeated CardInfo cardInfo = 2; // 牌的列表
+    optional int32 cardType = 3;    //牌类型
+}
+
+message TenHalfVSCardRes {
+    repeated VSRoleInfo vsRoleInfo = 1;  //玩家信息列表
+}
+

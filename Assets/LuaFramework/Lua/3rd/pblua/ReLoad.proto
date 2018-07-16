@@ -1,0 +1,205 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "ReLoad_pb"; 
+
+import "ChessInfo.proto";
+import "CardInfo.proto";
+
+message ReLoadReq {
+	optional string pid = 1; // 角色的平台id
+	optional string userId = 2; // 角色的userid
+}
+
+// 重连操作所有玩家的信息
+message ReLoadRoleInfos {
+	optional int32 roleIndex = 1;
+	optional int64 roleId = 2;
+	optional string name = 3;
+	optional string ip = 4;
+	optional string headImg = 5;
+	optional int32 jifen = 6;
+	optional int32 gender = 7; // 性别
+	optional int64 diamond = 8; // 钻石数
+	optional string locationInfo = 9; // 位置信息
+	optional bytes spInfoRes = 10;	//玩家牌的数据
+	optional bool isOnline = 11; // 玩家是否在线
+	optional int32 rank = 12; // 玩家排名 (比赛场用)
+	optional bool isTrusteeship = 13; // 玩家是否托管 (比赛场用)
+	optional int32 wing=14;//元宝 
+	optional int32 goldcoin=15;//金币
+	optional bool isLook = 16;//是否是观战玩家 (true:观战玩家，false:游戏玩家)
+}
+
+
+message MahjongRoleSpInfo{
+	optional int32 chessCount = 1; // 当前玩家牌的总数量
+	repeated ChessInfo roleChess = 2; // 玩家自己牌的列表(其他玩家这里存放的是已经被用过的牌)
+	repeated ChessInfo outChess = 3; // 打出来的牌
+	optional bool faFinish = 4; // 发牌是否完成
+}
+
+// 麻将重连的数据
+message MahjongReload {
+	optional int32 roomNum = 1;
+	optional bool zimohu = 2; 
+	optional bool feng = 3; 
+	optional bool hongzhong = 4; 
+	optional int32 yu = 5;
+	optional int32 jushu = 6; // 总局数
+	optional int32 alreadyJuShu = 7; // 已经打了的局数
+	optional int32 curIndex = 8; // 当前的索引
+	optional int32 zhuang = 9; // 当前局的庄
+	optional int32 zhuaIndex = 10; // 在谁那开始抓牌的索引
+    optional int32 shaiziMin = 11; // 骰子最小数（从第几个开始抓牌）
+    optional int32 shaiziMax = 12; // 骰子最大值
+    optional int32 beforeChess = 13; // 从前面已经抓了几张牌
+    optional int32 lastChess = 14; // 从后面已经抓了几张牌(比如杠，就要从后面开始抓牌)
+	repeated ReLoadRoleInfos roles = 15;
+	optional ChessInfo curOutChess = 16; // 当前打下去的那张牌
+	optional int32 modeType = 17; // 模式: 1=AA 2=老板模式
+	optional int32 vsRoomNum = 18; // 比赛场房间号  不等于0 就是比赛场
+	optional int32 vsType = 19; // 比赛类型
+	optional int32 vsCount = 20; // 比赛人数
+	optional int32 vsLun = 21; // 比赛轮数
+	optional bool bihu = 22; // 点炮必胡 
+	optional int32 moneyType 	= 23;  // 1=金币场 2=元宝场 3=房卡
+	optional int32 baseNum 		= 24;  // 底金
+	optional int32 qualified 	= 25;  //几进几出
+	optional int32 costMoney    = 26;//扣除金币元宝
+}
+
+// 十点半特殊数据
+message TenhalfRoleSpInfo{
+	optional int32 result = 1;	//牌型结果	十点半，五花雷等
+	repeated CardInfo roleCard = 2;	//玩家手牌
+	optional int32 betCount = 3;	// 下注的分
+}
+
+// 十点半重连
+message TenhalfReload{
+	optional int32 roomNum = 1;
+	optional int32 everyJushu = 2; // 每人局数
+	optional bool tenHalfRateDouble = 3; // 十点半2倍
+	optional bool fiveRateThree = 4; // 五雷3倍
+	optional bool fiveHuaRateFive = 5; // 五花雷5倍
+	optional bool tenHalfLeiRateFive = 6; // 十点半雷5倍
+	optional bool king = 7;// 有无王牌，有王算半点
+	optional bool leaderZhuang = 8; // 是否房主当庄
+	optional int32 alreadyJuShu = 9;	// 已经打了的局数
+	optional int32 zhuang = 10;		// 当前局的庄
+	optional int32 curIndex = 11;	// 当前的索引
+	repeated ReLoadRoleInfos roles = 12;
+	optional bool zhuangFlag = 13;	// 是否弹当庄面板 true 弹
+	repeated ReLoadRoleInfos waitRoles = 14; //等待玩家
+	optional int32 moneyType 	= 15;  // 1=金币场 2=元宝场 3=房卡
+	optional int32 baseNum 		= 16;  // 底金
+	optional int32 qualified 	= 17;  //几进几出
+	optional int32 costMoney    = 18;//扣除金币元宝
+}
+
+// 牛牛特殊数据
+message NiuniuRoleSpInfo{
+	optional int32 		result 		= 1;	// 牌型结果
+	repeated CardInfo 	roleCard 	= 2;	// 玩家手牌
+	optional int32 		betCount 	= 3;	// 下注的分
+	optional bool 		isShowCard 	= 4;	// 是否亮牌
+	optional int32		qiangBei 	= 5;	// 抢庄倍数
+	optional int32		tuiBei 		= 6;	// 推注倍数
+	optional bool     	isChange 	= 7;    // 是否换牌
+	optional bool 		isAllShowCard = 8;// 是否全部亮牌
+}
+
+// 牛牛重连
+message NiuniuReload{
+	optional int32 roomNum 			= 1;
+	optional int32 totalJushu 		= 2; 		// 总局数
+	optional bool king 				= 3; 		// 有无王牌，有王算半点
+	optional bool leaderZhuang 		= 4; 		// 是否房主当庄
+	optional int32 niuniuGameType 	= 5;		// 游戏类型 1明四抢庄
+	optional int32 maxNum			= 6;		// 房间人数 6 8
+	optional string baseScore		= 7;		// 下注底分1-4，3-6，5-8，7-10
+	optional string special			= 8;		// 特殊牌型 11代表顺子牛 12代表五花牛，13代表同花牛，14代表葫芦牛，15代表炸弹牛，16代表金花牛，17代表五小牛
+	optional int32 maxZhuang		= 9;		// 最大抢庄倍数 1，2，3，4
+	optional int32 maxPush			= 10;		// 最大推注 分四种 0，20，40，60
+	optional string seniorInfo		= 11;		// 高级选项 禁止换牌（boolean）禁止搓牌（boolean）开始后禁止加入（boolean）
+	optional int32 doubleRule		= 12;		// 翻倍规则 1（牛牛三倍） 2（牛牛四倍）
+	optional int32 alreadyJuShu 	= 13;		// 已经打了的局数
+	optional int32 curStatus		= 14;		// 当前房间状态 	1准备 2 换牌 3 抢庄 4下注 5 亮牌
+	optional int32 zhuang 			= 15;		// 当前局庄的索引   0就是没有
+	repeated ReLoadRoleInfos roles 	= 16;
+	repeated ReLoadRoleInfos waitRoles = 17;    //等待玩家
+	optional int32 moneyType 	= 18;  // 1=金币场 2=元宝场 3=房卡
+	optional int32 baseNum 		= 19;  // 底金
+	optional int32 qualified 	= 20;  //几进几出
+	optional int32 costMoney    = 21;//扣除金币元宝
+}
+
+// 金花的特殊数据
+message GoldFlowerRoleSpInfo{
+	optional int32 		result 		= 1;	// 牌型结果
+	repeated CardInfo 	roleCard 	= 2;	// 玩家手牌
+	optional bool 		isLookCard 	= 3; 	// 是否看牌
+	optional bool 		isGiveUp 	= 4; 	// 是否弃牌
+	optional bool 		isCompare 	= 5; 	// 是否比牌
+	repeated int32 		bets = 6;	// 玩家下注的集合
+}
+
+// 炸金花重连
+message GoldFlowerReload{
+	optional int32 		roomNum 		= 1;	// 房间号
+	optional int32 		jinHuaTotal 	= 2; 	// 总局数
+	optional int32 		playMethond 	= 3;	// 玩法 1比大小 2比花色 3全比
+	optional bool 		isLeopard 		= 4; 	// 豹子额外奖励
+	optional bool 		isDouble 		= 5; 	// 比牌双倍开
+	optional int32 		isTop			= 6;	// 封顶
+	optional int32 		isCompare		= 7;	// 比牌
+	optional int32 		isGuess			= 8;	// 闷牌
+	optional int32 		alreadyJuShu 	= 9;	// 已经打了的局数
+	optional int32 		zhuang 			= 10;	// 当前局的庄
+	optional int32 		curIndex 		= 11;	// 当前操作的索引
+	optional int32 		allbetCount 	= 12; 	// 当前局下注总分
+	optional int32 		curLunShu 		= 13; 	// 当前局轮数
+	optional bool 		curEnd	 		= 14; 	// 当前局是否结束
+	repeated ReLoadRoleInfos roles = 15;
+	optional int32 		upIndex 		= 16; 	// 上一个下注人的索引
+	optional bool 		upPourFlag 		= 17; 	// 上一个下注的时候是否看过牌
+	repeated ReLoadRoleInfos waitRoles  = 18;    //等待玩家
+	optional int32 moneyType 	= 19;  // 1=金币场 2=元宝场 3=房卡
+	optional int32 baseNum 		= 20;  // 底金
+	optional int32 qualified 	= 21;  //几进几出
+	optional int32 costMoney    = 22;//扣除金币元宝
+}
+
+// 捉麻子的特殊数据
+message CatchPockRoleSpInfo{
+	optional int32 		leftCount 	= 1;	// 剩余牌数
+	repeated CardInfo 	popCards 	= 2;	// 最后出的牌 --没出牌为空
+	optional int32 		popCardType = 3; 	// 出牌的牌型 
+	repeated CardInfo 	handCards 	= 4;	// 自己的手牌
+	optional int32 		buttonTips  = 5;   // 0 没有牌大过上家， 1 不能不出牌  
+	repeated PopCardTips tips  = 6;   // 玩家出牌提示列表
+}
+
+message PopCardTips {
+	repeated CardInfo cardInfo = 1;	  // 牌的信息
+}
+
+// 捉麻子重连
+message CatchPockReload{
+	optional int32 		roomNum 		= 1;	// 房间号
+	optional int32 		catchTotal 		= 2; 	// 总局数
+	optional int32 		alreadyJuShu 	= 3;	// 已经打了的局数
+	optional int32 		firstIndex 		= 4;	// 当前局先出牌的人
+	optional int32 		curIndex 		= 5;	// 当前操作的索引
+	optional bool 		curEnd	 		= 6; 	// 当前局是否结束
+	repeated ReLoadRoleInfos roles 		= 7;
+	optional int32 moneyType 	= 8;  // 1=金币场 2=元宝场 3=房卡
+	optional int32 baseNum 		= 9;  // 底金
+	optional int32 qualified 	= 10;  //几进几出
+	optional int32 costMoney    = 11;//扣除金币元宝
+}
+
+message ReLoadRes {
+	optional int32 type 		= 1;  // 1=麻将 2=十点半 3=炸金花 4=捉麻子
+    optional bytes dataRes 		= 2;
+	optional bool  isWait 		= 3;  //是否等待
+}

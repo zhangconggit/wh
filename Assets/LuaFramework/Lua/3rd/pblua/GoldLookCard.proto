@@ -1,0 +1,10 @@
+option java_package = "com.leyou.common.protobuf.card.jinhua";
+option java_outer_classname = "GoldLookCard_pb"; 
+
+import "CardInfo.proto";
+
+message GoldLookCardRes {
+    optional int32 roleIndex = 1; // 玩家索引
+	repeated CardInfo cardInfo = 2; // 牌的列表
+	optional int32 cardType    = 3; // 0=默认值 1=弃牌 2=高牌 3=对子 4.顺子 5.金花 6.顺金 7.豹子 8.特殊（235，只吃豹子） 
+}

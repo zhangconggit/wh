@@ -1,0 +1,12 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "loadMailList_pb"; 
+
+message LoadMailListRes{ 
+  optional string playerName = 1;  //赠送者的名字
+  optional int32 roleId= 2;  //赠送者的ID 客户端会根据这个id请求领取邮件内的物品
+  optional string goods= 3; //赠送的物品的名字（字符串类型，元宝，金币，房卡）
+  optional int32 number= 4; //赠送的数量
+  optional string  time= 5; // 赠送时的时间（或者收到邮件时的时间）
+  optional string imgHead= 6; // 赠送者的头像
+}
+ 

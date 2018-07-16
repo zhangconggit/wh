@@ -1,0 +1,16 @@
+option java_package = "com.leyou.common.protobuf";  
+option java_outer_classname = "BloodFightPushSignOperate_pb"; 
+
+import "ChessInfo.proto";
+
+message BloodFightPushSignOperateReq{
+	required int32 signType = 1; // 标签操作类型
+}
+
+message BloodFightPushSignOperateRes {
+	optional int64 roleId = 1;
+	optional int32 roleIndex = 2;
+	optional int32 signType = 3;
+	repeated ChessInfo chessInfo = 4;
+	optional int32 huTime = 5; // 第几胡
+}

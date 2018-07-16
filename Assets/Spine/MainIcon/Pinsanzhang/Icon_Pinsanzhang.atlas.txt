@@ -1,0 +1,90 @@
+
+Icon_Pinsanzhang.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/erduo
+  rotate: false
+  xy: 886, 223
+  size: 50, 30
+  orig: 50, 30
+  offset: 0, 0
+  index: -1
+images/erduo1
+  rotate: true
+  xy: 977, 224
+  size: 29, 33
+  orig: 29, 33
+  offset: 0, 0
+  index: -1
+images/gebo
+  rotate: true
+  xy: 573, 91
+  size: 91, 52
+  orig: 91, 52
+  offset: 0, 0
+  index: -1
+images/guang
+  rotate: false
+  xy: 255, 20
+  size: 233, 233
+  orig: 233, 233
+  offset: 0, 0
+  index: -1
+images/huan
+  rotate: false
+  xy: 2, 2
+  size: 251, 251
+  orig: 251, 251
+  offset: 0, 0
+  index: -1
+images/pai1
+  rotate: false
+  xy: 836, 204
+  size: 48, 49
+  orig: 48, 49
+  offset: 0, 0
+  index: -1
+images/pai2
+  rotate: true
+  xy: 773, 195
+  size: 58, 61
+  orig: 58, 61
+  offset: 0, 0
+  index: -1
+images/shenzi
+  rotate: false
+  xy: 490, 2
+  size: 73, 70
+  orig: 73, 70
+  offset: 0, 0
+  index: -1
+images/tou
+  rotate: false
+  xy: 490, 74
+  size: 81, 108
+  orig: 81, 108
+  offset: 0, 0
+  index: -1
+images/tui
+  rotate: false
+  xy: 654, 203
+  size: 117, 50
+  orig: 117, 50
+  offset: 0, 0
+  index: -1
+images/weiba
+  rotate: false
+  xy: 938, 227
+  size: 37, 26
+  orig: 37, 26
+  offset: 0, 0
+  index: -1
+images/zi
+  rotate: false
+  xy: 490, 184
+  size: 162, 69
+  orig: 162, 69
+  offset: 0, 0
+  index: -1

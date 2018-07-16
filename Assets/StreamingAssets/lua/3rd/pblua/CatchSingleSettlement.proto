@@ -1,0 +1,17 @@
+option java_package = "com.leyou.common.protobuf.card.zhuomazi";
+option java_outer_classname = "CatchSingleSettlement_pb"; 
+
+import "CardInfo.proto";
+
+message CatchSingleSettlementRes {
+    repeated SettlementInfo settlementInfo = 1;  //玩家信息列表
+	optional int32 endType = 2; // 结束类型 1=出牌结束   4=解散房间 3个人点了同意 5=解散房间 时间到了
+}
+
+message SettlementInfo{
+    optional int32 roleIndex 		= 1; // 玩家索引
+    optional int32 curJiFen 		= 2; // 当前赢或者输的分数
+    optional int32 jiFen 			= 3; // 头像底下的总积分
+	repeated CardInfo leftCardInfo 	= 4; // 剩余牌的列表
+}
+

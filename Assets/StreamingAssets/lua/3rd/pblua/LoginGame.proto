@@ -1,0 +1,42 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "LoginGame_pb"; 
+
+
+message LoginGameReq{
+	required int32 loginType = 1; // 登陆类型 1=微信登陆 2=游客登陆
+	optional string pid = 2; // pid
+	optional string userId = 3; // 客户端有缓存，就传userId过来，没有缓存传""
+	optional string machingId = 4; // 机器的设备码 有唯一性
+	optional string name = 5; 
+	optional string headimgUrl = 6; // 头像的具体url
+	optional int32 gender = 7; // 性别 
+	optional string unionId = 8; // unionId,游客登陆传""
+}
+
+message UserSimpleInfo{
+	required int64 roleId = 1;
+	optional string name = 2;
+	optional int32 gender = 3;
+	optional int64 diamond = 4; // 钻石数
+	optional string headImg = 5; // 头像名，客户端要从服务器拉取对应头像
+	optional int32 state = 6; // 1=等待界面   2=打牌界面 0=在主界面
+	optional int32 roomNum = 7; // 房间号
+	optional int64 goldcoin = 8; // 金币数
+	optional int64 wing = 9; // 元宝数
+	optional int32 signDays = 10; //已签到天数
+	optional bool isSign = 11; //是否已签到
+	optional string shortDesc = 12; //个人签名
+}
+
+message LoginGameRes {
+	optional int64 nowTime = 1; // long型时间戳
+    optional int32 offset = 2; // int型,时区偏移量
+	repeated UserSimpleInfo userInfo = 3; // list，用户简单信息
+	required string userId = 4; // string userId
+	optional bool isdebug = 5; // 是否是debug模式
+	optional string ip = 6; // string ip
+	optional int32 userType = 7; // 用户类型
+	optional bool isregister = 8; // 是否是第一次注册
+	optional bool isRealName = 9;//是否实名认证
+	optional string openid   =10;//微信openid
+}

@@ -1,0 +1,21 @@
+option java_package = "com.leyou.common.protobuf.card.niuniu"; 
+option java_outer_classname = "CreateNiuNiuRoom_pb"; 
+
+message CreateNiuNiuRoomReq{
+	required int32 totalJushu = 1;// 总局数 10 20 30
+	optional bool king = 2;// 有无花牌
+	optional int32 niuniuGameType =	3;//游戏类型 1明四抢庄
+	optional string special	= 4;//特殊牌型 11代表顺子牛 12代表五花牛，13代表同花牛，14代表葫芦牛，15代表炸弹牛，16代表金花牛，17代表五小牛
+}
+
+message CreateNiuNiuRoomRes {
+	optional int32 roomNum = 1; // 房间号
+	optional int32 moneyType = 2; // 1=金币场 2=元宝场 3=房卡
+	optional int32 baseNum = 3; // 底金
+	optional int32 qualified = 4; // 合格金额
+	optional string special	= 5;//特殊牌型 11代表顺子牛 12代表五花牛，13代表同花牛，14代表葫芦牛，15代表炸弹牛，16代表金花牛，17代表五小牛
+	optional int32 maxNum	=	6;//房间人数 6 8
+	optional string baseScore	=	7;//下注底分1-4，3-6，5-8，7-10
+	optional int32 maxZhuang	=	8;//最大抢庄倍数 1，2，3，4
+	optional int32 mcreenings = 9; //1初级场 2中级场 3高级场 4......
+}

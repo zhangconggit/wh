@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+<<<<<<< .mine
+guid: 57578e0b21244b642bc69451ff54cc75
+||||||| .r1462
+guid: cd0fceac55f691245ad9eda7439e41e1
+=======
+guid: 31e36ce072bd7ea469e286d77cd63c94
+>>>>>>> .r1480
+folderAsset: yes
+<<<<<<< .mine
+timeCreated: 1513047543
+licenseType: Free
+||||||| .r1462
+timeCreated: 1513048305
+licenseType: Pro
+=======
+timeCreated: 1513047959
+licenseType: Pro
+>>>>>>> .r1480
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

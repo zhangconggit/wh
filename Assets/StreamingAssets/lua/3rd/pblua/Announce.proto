@@ -1,0 +1,14 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "Announce_pb"; 
+
+message AnnounceInfo{
+	optional int64 id = 1;
+	optional string content = 2;
+	optional int32 interval = 3;
+	optional int64 beginTime = 4; // 格式：时间戳
+	optional int64 endTime = 5; // 格式：时间戳
+}
+
+message AnnounceRes {
+	repeated AnnounceInfo announceInfo = 1;
+}

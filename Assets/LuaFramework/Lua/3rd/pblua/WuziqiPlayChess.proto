@@ -1,0 +1,13 @@
+option java_package = "com.leyou.common.protobuf.chess.wuziqi";
+option java_outer_classname = "WuziqiPlayChess_pb"; 
+
+message WuziqiPlayChessReq{
+    required int32 xChess = 1; //横格位置
+	required int32 yChess = 2; //横格位置
+}
+
+message WuziqiBetRes {
+    optional int32 roleIndex = 1;  // 玩家索引
+    required int32 xChess = 2; //横格位置
+	required int32 yChess = 3; //横格位置
+}

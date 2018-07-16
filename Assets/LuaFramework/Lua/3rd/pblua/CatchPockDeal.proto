@@ -1,0 +1,14 @@
+option java_package = "com.leyou.common.protobuf.card.zhuomazi";
+option java_outer_classname = "CatchPockDeal_pb"; 
+
+import "CardInfo.proto";
+
+message CatchPockDealRes {
+    optional int32 roleIndex   = 1;   // 玩家索引
+	repeated CardInfo cardInfo = 2;	  // 牌的信息
+	optional int32 firstIndex  = 3;   // 先出牌人的索引
+}
+
+
+
+ 

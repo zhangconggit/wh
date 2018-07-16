@@ -1,0 +1,17 @@
+option java_package = "com.leyou.common.protobuf.card.doudizhu";
+option java_outer_classname = "AddMultiple_pd"; 
+
+message addMultipleReq {
+	optional bool multiple = 1;	  // 是否加倍  true 加倍 false不加倍
+}
+
+message addMultipleRes {
+	optional int32 multipleUserIndex = 1;	  // 加倍玩家index
+	optional bool multiple = 2;				//是否加倍
+	optional int32 currentMultiple = 3;	  // 当前倍数
+}
+
+
+
+
+ 

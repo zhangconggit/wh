@@ -1,0 +1,10 @@
+syntax = "proto2";
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "ChessInfo_pb"; 
+
+message ChessInfo { 
+  optional int32 id = 1; // 牌的唯一id
+  optional int32 color = 2; // 牌的花色
+  optional int32 num = 3; // 牌的数值
+  optional int32 used = 4; // 牌是否被使用 0=没被用   1=被碰  2=被明杠 3=被暗杠 4=过路杠
+} 

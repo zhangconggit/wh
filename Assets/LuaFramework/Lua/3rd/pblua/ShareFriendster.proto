@@ -1,0 +1,7 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "ShareFriendster_pb"; 
+
+message ShareFriendsterReq {
+	optional int32 shareType = 1; //分享类型 1.好友 2.朋友圈 
+}
+

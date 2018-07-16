@@ -1,0 +1,19 @@
+option java_package = "com.leyou.common.protobuf.card.doudizhu";
+option java_outer_classname = "CreateDouDiZhuRoomReq_pb"; 
+
+message CreateDouDiZhuRoomReq{
+	required int32 douDiZhuTotal 			= 1; 	// 总局数
+	required int32 wanfaType 				= 2; 	// 1 欢乐斗地主 2癞子斗地主
+	required int32 modeType 		 		= 3; 	// 模式 1AA 2老板
+	required int32 landlord 				= 4; 	// 地主
+	required int32 maxMultiple 				= 5; 	// 封顶倍数
+	
+}
+
+message CreateDouDiZhuRoomRes {
+	optional int32 roomNum = 1; // 房间号
+	optional int32 baseNum = 2; // 底金
+	optional int32 qualified = 3; // 合格金额
+	optional int32 moneyType = 4; //金币OR元宝 1金币 2元宝	
+	optional int32 mcreenings = 5; //1初级场 2中级场 3高级场 4......
+}

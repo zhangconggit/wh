@@ -1,0 +1,147 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "JoinRoom_pb"; 
+
+message JoinRoomReq{
+	required int32 roomNum = 1; // 房间号
+}
+
+message JoinRoomUserInfo {
+	optional int32 index = 1;
+	optional int64 roleId = 2;
+	optional string name = 3;
+	optional string ip = 4;
+	optional string headImg = 5;
+	optional int32 gender = 6; // 性别
+	optional int64 diamond = 7; // 钻石数
+	optional int64 goldcoin = 8; // 金币数
+	optional int64 wing = 9; // 
+	optional int32 jifen = 10;//积分
+	optional bool  islook = 11;//是否观战 true观战 
+}
+
+	
+// 金花房间信息
+message JinHuaInfo {
+	optional int32 roomNum = 1;
+	optional int32 wanfaType = 2; // 玩法类型 1= 比大小，同牌型最大单张大小相同时，依次比较剩下的牌，如果全部相同，谁开牌谁输 
+								 // 2= 比花色  同牌型最大单张大小相同时，最大单张牌比较花色，黑桃>红桃>梅花>方片
+								 // 3= 全比 先比大小，大小相同，再比花色
+	optional bool baoziReward = 3; // 豹子额外奖励
+	optional bool compareDouble = 4; // 比牌双倍开
+	optional int32 maxOpen = 5;// 封顶开牌轮数 
+	optional int32 compareRound = 6;// 比牌轮数  这个就是几轮之后才可以比牌
+	optional int32 menRound = 7;// 闷牌轮数  这个就是必须要闷几轮 不闷=0
+	repeated JoinRoomUserInfo joinRoomUserInfo = 8;
+	optional int32 jushu = 9; //局数
+	repeated JoinRoomUserInfo watchBattleUserInfo = 10; //观战玩家数据
+	
+}
+
+// 十点半房间信息
+message TenHalfInfo {
+	optional int32 roomNum = 1;
+	optional int32 everyJushu = 2; // 每人局数
+	optional bool tenHalfRateDouble = 3; // 十点半2倍
+	optional bool fiveRateThree= 4; // 五雷3倍
+	optional bool fiveHuaRateFive = 5; // 五花雷5倍
+	optional bool tenHalfLeiRateFive = 6; // 十点半雷5倍
+	optional bool king = 7; // 有无王牌，有王算半点
+	optional bool leaderZhuang = 8; // 是否房主当庄
+	repeated JoinRoomUserInfo joinRoomUserInfo = 9;
+	repeated JoinRoomUserInfo watchBattleUserInfo = 10; //观战玩家数据
+	
+}
+
+//捉麻子房间信息
+message CatchPockInfo{
+	optional int32 roomNum = 1;	// 房间号
+	optional int32 jushu   = 2; // 局数
+	repeated JoinRoomUserInfo joinRoomUserInfo = 3;
+	repeated int64 readyRoleIds = 4; // 准备的人的roleid
+	repeated JoinRoomUserInfo watchBattleUserInfo = 5; //观战玩家数据
+	
+}
+
+//斗地主房间信息
+message DouDiZhuInfo{
+	optional int32 roomNum = 1;	// 房间号
+	optional int32 jushu   = 2; // 局数
+	repeated JoinRoomUserInfo joinRoomUserInfo = 3;
+	repeated int64 readyRoleIds = 4; // 准备的人的roleid
+	optional bool laiZiGou = 5; //1 欢乐斗地主 2 癞子斗地主
+	optional int32 maxMultiple = 6; //最大倍数
+	optional int32 modeType = 7; // 模式: 1=AA 2=老板模式
+	
+	
+}
+
+//牛牛房间信息
+message NiuNiuInfo {
+	optional int32 roomNum = 1;
+	required int32 totalJushu = 2; // 总局数 10 20 30
+	optional bool king = 3;// 有无王牌
+	optional bool leaderZhuang = 4;// 是否房主当庄
+	optional int32 niuniuGameType=5;//游戏类型 1明四抢庄
+	optional int32 maxNum=6;//房间人数 6 8
+	optional string baseScore=7;//下注底分1-4，3-6，5-8，7-10
+	optional string special=8;//特殊牌型 11代表顺子牛 12代表五花牛，13代表同花牛，14代表葫芦牛，15代表炸弹牛，16代表金花牛，17代表五小牛
+	optional int32 maxZhuang=9;//最大抢庄倍数 1，2，3，4
+	optional int32 maxPush=10;//最大推注 分四种 0，20，40，60
+	optional string seniorInfo=11;//高级选项 禁止换牌（boolean）禁止搓牌（boolean）开始后禁止加入（boolean）
+	optional int32 doubleRule=12;//翻倍规则 1（牛牛三倍） 2（牛牛四倍）
+	repeated JoinRoomUserInfo joinRoomUserInfo = 13;
+	repeated JoinRoomUserInfo watchBattleUserInfo = 14; //观战玩家数据
+}
+
+// 麻将房间信息
+message MahjongInfo {
+	optional int32 roomNum = 1;
+	optional bool zimohu = 2; 
+	optional bool feng = 3; 
+	optional bool hongzhong = 4; 
+	optional int32 yu = 5;
+	optional int32 jushu = 6;
+	repeated JoinRoomUserInfo joinRoomUserInfo = 7;
+	optional int32 roleNum = 8;
+	optional int32 modeType = 9; // 模式: 1=AA 2=老板模式
+	optional bool bihu = 10; // 点炮必胡
+	repeated JoinRoomUserInfo watchBattleUserInfo = 11; //观战玩家数据
+}
+
+//血战房间信息
+message BloodFightInfo{
+	required int32 jushu = 1;// 局数8 16
+	optional int32 baseScore = 2;// 底分 1 2 5 10
+	optional int32 fanshu = 3;// 番数 2 3 4
+	optional int32 PlayMethodZimo =	4;//玩法 11代表自摸加底 12代表自摸加番
+	optional int32 replaceCard	=	5;//换三张0代表不换 1代表换
+	optional string cardType	=	6;//牌型 15代表幺九将对 16代表门清中张 17代表天地胡
+	repeated JoinRoomUserInfo joinRoomUserInfo = 7;
+	optional int32 roleNum = 8;
+	repeated JoinRoomUserInfo watchBattleUserInfo = 9; //观战玩家数据
+	optional int32 roomNum = 10;
+	optional int32 PlayMethodDiangang =	11;//玩法 13代表点杠花-自摸 14代表点杠花-点炮
+}
+
+// 五子棋房间信息
+message WuziqiInfo {
+	optional int32 roomNum = 1;
+	optional int64 bet = 2; 
+	optional int32 jushu = 3;
+	optional int32 roleNum = 4;
+	optional int32 leaderIndex = 5;
+	repeated JoinRoomUserInfo joinRoomUserInfo = 6;
+}
+
+message JoinRoomRes {
+	optional int32 gameType = 1; //   1=麻将 2=十点半 3=炸金花 4 = 捉麻子 5=牛牛 6=五子棋 7=红中麻将 9=血战麻将
+	optional bytes dataRes = 2;
+	optional int32 moneyType = 3; // 1=金币场 2=元宝场 3=房卡
+	optional int64 roomMasterRoleId = 4;	//房主id
+	optional int32 baseNum = 5; // 底金
+	optional int32 mcreenings = 6; //1初级场 2中级场 3高级场 4......
+	optional int32 qualified = 7;//进场合格金额
+	optional bool star = 8;//是否开始
+	optional bytes dataResForWait=9;//观战玩家加入推送当前牌局的游戏数据
+	optional int32 costMoney = 10;//扣除金币或者元宝
+}

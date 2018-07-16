@@ -1,0 +1,9 @@
+option java_package = "com.leyou.common.protobuf.chess.wuziqi";
+option java_outer_classname = "RoleReady_pb";  
+
+message RoleReadyRes {
+	optional int32 roleIndex = 1; //谁点了准备
+    optional int32 leaderIndex = 2; // 房主的索引
+    optional bool allReady = 3; // true等于所有人都点了准备
+	repeated int32 alreadyIndex = 4; // 点了准备的玩家index
+}

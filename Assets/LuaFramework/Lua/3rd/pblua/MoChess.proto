@@ -1,0 +1,11 @@
+syntax = "proto2";
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "MoChess_pb"; 
+
+import "ChessInfo.proto";
+
+message MoChessesRes {
+    optional int32 roleIndex = 1; // 摸牌人Index
+    optional int32 moOrder = 2; // 摸牌的顺序 1=从前面开始摸 2=从后面开始摸
+	optional ChessInfo chessInfo = 3; // 牌的列表
+}

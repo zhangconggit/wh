@@ -1,0 +1,24 @@
+option java_package = "com.leyou.common.protobuf.card.doudizhu";
+option java_outer_classname = "SnatchLandlord_pd"; 
+
+import "CardInfo.proto";
+
+message snatchLandlordReq {
+	optional bool snatch = 1;	  // 是否抢地主 true 叫  false 不叫
+}
+
+message snatchLandlordRes {
+	optional int32 snatchUserIndex = 1;	  // 抢地主玩家index
+	optional bool snatch = 2;				  //是否抢地主
+	optional int32 nextUserIndex = 3;     //下一个玩家操作索引
+	optional int32 currentMultiple = 4;	  // 当前倍数
+	optional int32  gameState = 5;	// 该阶段是否结束 1结束 0未结束
+	repeated CardInfo cardInfo = 6;	  // 底牌的信息
+	repeated CardInfo laiZiGouCardInfo = 7;	//癞子牌
+	
+}
+ 
+
+
+
+ 

@@ -1,0 +1,24 @@
+option java_package = "com.leyou.common.protobuf.card.tenhalf"; 
+option java_outer_classname = "CreateTenHalfRoom_pb"; 
+
+message CreateTenHalfRoomReq{
+	required int32 everyJushu = 1; // 每人局数
+	optional bool tenHalfRateDouble = 2; // 十点半2倍
+	optional bool fiveRateThree = 3; // 五雷3倍
+	optional bool fiveHuaRateFive = 4; // 五花雷5倍
+	optional bool tenHalfLeiRateFive = 5; // 十点半雷5倍
+	optional bool king = 6;// 有无王牌，有王算半点
+	optional bool leaderZhuang = 7; // 是否房主当庄
+}
+
+message CreateTenHalfRoomRes {
+	optional int32 roomNum = 1; // 房间号
+	optional int32 baseNum = 2; // 底金
+	optional int32 qualified = 3; // 合格金额
+	optional int32 moneyType = 4; //金币OR元宝 1金币 2元宝	
+	optional int32 mcreenings = 5; //1初级场 2中级场 3高级场 4......
+}
+
+
+
+ 

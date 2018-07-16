@@ -1,0 +1,11 @@
+option java_package = "com.leyou.common.protobuf.card.doudizhu";
+option java_outer_classname = "DouDiZhuPlayRead_pb"; 
+
+message DouDiZhuPlayReadRes {
+    optional bool 	allStart 		= 1; // true等于所有人都点了开始游戏
+	repeated int32 	alreadyIndex 	= 2; // 点了开始游戏的玩家index
+}
+
+
+
+ 

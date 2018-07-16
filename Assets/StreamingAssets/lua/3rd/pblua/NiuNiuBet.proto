@@ -1,0 +1,16 @@
+option java_package = "com.leyou.common.protobuf.card.niuniu";
+option java_outer_classname = "NiuNiuBet_pb"; 
+
+message NiuNiuBetReq{
+    optional int32 betConut = 1; //下注倍数
+}
+
+message NiuNiuBetRes {
+    optional int32 roleIndex = 1;  // 玩家索引
+    optional int32 betConut = 2;   //下注数
+    optional bool isPush = 3;//是否推注
+}
+
+
+
+ 

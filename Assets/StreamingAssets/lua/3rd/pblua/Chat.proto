@@ -1,0 +1,9 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "Chat_pb"; 
+
+// 聊天消息客户端给我推送什么,我就会给客户端返回什么
+message ChatReq{
+	optional int32 chatType = 1; 
+	optional string chatText = 2; 
+	optional int32 chatSelfIndex = 3;
+}

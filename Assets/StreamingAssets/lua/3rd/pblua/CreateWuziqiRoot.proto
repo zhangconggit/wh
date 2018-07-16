@@ -1,0 +1,10 @@
+option java_package = "com.leyou.common.protobuf.chess.wuziqi";
+option java_outer_classname = "CreateWuziqiRoot_pb"; 
+
+message CreateWuziqiRoomReq{
+	required int32 wuZiqiTotal 			= 1; 	// 总局数
+}
+
+message CreateWuziqiRoomRes {
+	optional int32 roomNum = 1; // 房间号
+}

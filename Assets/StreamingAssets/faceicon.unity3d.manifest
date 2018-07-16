@@ -1,0 +1,55 @@
+ManifestFileVersion: 0
+CRC: 3940901591
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 81b3e236e01e4aa88ff5ed7cad4dad07
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3895f000b2feb0b0d0765e96f610d039
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7ffbea39f9c10e84b849e95905319060, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/UIPrefab/FaceIcon/e25.prefab
+- Assets/Art/UIPrefab/FaceIcon/e12.prefab
+- Assets/Art/UIPrefab/FaceIcon/e16.prefab
+- Assets/Art/UIPrefab/FaceIcon/e26.prefab
+- Assets/Art/UIPrefab/FaceIcon/e11.prefab
+- Assets/Art/UIPrefab/FaceIcon/e4.prefab
+- Assets/Art/UIPrefab/FaceIcon/e22.prefab
+- Assets/Art/UIPrefab/FaceIcon/e24.prefab
+- Assets/Art/UIPrefab/FaceIcon/e14.prefab
+- Assets/Art/UIPrefab/FaceIcon/e19.prefab
+- Assets/Art/UIPrefab/FaceIcon/e5.prefab
+- Assets/Art/UIPrefab/FaceIcon/e18.prefab
+- Assets/Art/UIPrefab/FaceIcon/e15.prefab
+- Assets/Art/UIPrefab/FaceIcon/e20.prefab
+- Assets/Art/UIPrefab/FaceIcon/e17.prefab
+- Assets/Art/UIPrefab/FaceIcon/e6.prefab
+- Assets/Art/UIPrefab/FaceIcon/e9.prefab
+- Assets/Art/UIPrefab/FaceIcon/e3.prefab
+- Assets/Art/UIPrefab/FaceIcon/e10.prefab
+- Assets/Art/UIPrefab/FaceIcon/e2.prefab
+- Assets/Art/UIPrefab/FaceIcon/e23.prefab
+- Assets/Art/UIPrefab/FaceIcon/e1.prefab
+- Assets/Art/UIPrefab/FaceIcon/e7.prefab
+- Assets/Art/UIPrefab/FaceIcon/e13.prefab
+- Assets/Art/UIPrefab/FaceIcon/e21.prefab
+- Assets/Art/UIPrefab/FaceIcon/e8.prefab
+Dependencies: []

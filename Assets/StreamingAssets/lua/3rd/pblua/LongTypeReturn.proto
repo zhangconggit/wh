@@ -1,0 +1,6 @@
+option java_package = "com.leyou.common.protobuf";
+option java_outer_classname = "LongTypeReturn_pb"; 
+
+message LongTypeReturnRes {
+    optional int64 longVal = 1; // 返回的long型值，此类是通用类
+}

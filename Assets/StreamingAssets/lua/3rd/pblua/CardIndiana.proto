@@ -1,0 +1,39 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "CardIndiana_pb"; 
+
+// 获奖人的信息
+message RewardRoleInfo{
+	optional int64 qiId = 1; // 期数
+	optional int64 winRoleId = 2; // 获奖玩家roleid
+	optional string winName = 3;
+	optional int32 winReward =4; // 获奖数量
+	optional string winIp = 5; // 玩家ip
+	optional string winImg = 6; // 玩家头像url
+}
+
+// 40001 拉去房卡夺宝信息
+message CardIndianaInfoRes{
+	optional int64 qiId = 1; // 期数
+	optional int32 joinCount = 2; // 已经开始夺宝的人数
+	optional int32 sumCount = 3; // 参与总人数
+	optional int32 costCard = 4; // 每人消耗房卡数
+	optional int32 reward = 5; // 奖励房卡数
+	optional bool joinMy = 6; // 我是否参与了当期 true=参与 false=没参与
+	repeated RewardRoleInfo rewardRoleInfo = 7;
+}
+
+// 40002 开始夺宝
+message StartIndianaRes{
+	optional int64 curQiId = 1; // 当前期数
+	optional int32 joinCount =2; // 开始夺宝的人数
+	optional bool isEnd = 3; // 当期是否人满
+	optional int64 indianaRoleId = 4; // 开始夺宝操作的那人
+}
+
+// 40003 玩家参与那期的通知
+message JoinRoleNoticeRes{
+	optional int64 rewardRoleId = 1; // 获奖的roleid
+	optional string roleName = 2; // 获奖的人名字
+	optional int64 rewardQiId = 3; // 获奖的期数
+	optional int32 rewardCount = 4; // 获奖的房卡量
+}

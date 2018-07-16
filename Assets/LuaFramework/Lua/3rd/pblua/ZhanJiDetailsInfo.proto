@@ -1,0 +1,22 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "ZhanJiDetailsInfo_pb"; 
+
+message ZhanJiDetailsInfoReq {
+	required int32 id = 1; // id 
+}
+
+message ZhanJiDetailsRoleInfo{
+	optional int64 roleId = 1;
+	optional string name = 2;
+	optional int32 jifen = 3;
+}
+
+message ZhanJiDetailsInfo{
+	optional int32 xuhao = 1; // 序号
+	optional int64 startTime = 2; // 开始时间
+	repeated ZhanJiDetailsRoleInfo zhanJiDetailsRoleInfo = 3;
+}
+
+message ZhanJiDetailsInfoRes {
+	repeated ZhanJiDetailsInfo zhanjiDetailsInfo = 1;
+}

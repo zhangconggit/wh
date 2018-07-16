@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 2236206382
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5242a27c997d42d3f0dee6b5a311776a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/Audio/AudioPlayMusic/06.mp3
+- Assets/Art/Audio/AudioPlayMusic/15.mp3
+- Assets/Art/Audio/AudioPlayMusic/13.mp3
+- Assets/Art/Audio/AudioPlayMusic/05.mp3
+- Assets/Art/Audio/AudioPlayMusic/bgm3.mp3
+- Assets/Art/Audio/AudioPlayMusic/12.mp3
+- Assets/Art/Audio/AudioPlayMusic/14.mp3
+- Assets/Art/Audio/AudioPlayMusic/bgm1.mp3
+- Assets/Art/Audio/AudioPlayMusic/11.mp3
+- Assets/Art/Audio/AudioPlayMusic/09.mp3
+- Assets/Art/Audio/AudioPlayMusic/bgm6.mp3
+- Assets/Art/Audio/AudioPlayMusic/01.mp3
+- Assets/Art/Audio/AudioPlayMusic/10.mp3
+- Assets/Art/Audio/AudioPlayMusic/03.mp3
+- Assets/Art/Audio/AudioPlayMusic/bgm4.mp3
+- Assets/Art/Audio/AudioPlayMusic/womanClick2.mp3
+- Assets/Art/Audio/AudioPlayMusic/02.mp3
+- Assets/Art/Audio/AudioPlayMusic/04.mp3
+- Assets/Art/Audio/AudioPlayMusic/07.mp3
+- Assets/Art/Audio/AudioPlayMusic/08.mp3
+- Assets/Art/Audio/AudioPlayMusic/bgm2.mp3
+- Assets/Art/Audio/AudioPlayMusic/womanClick1.mp3
+Dependencies: []

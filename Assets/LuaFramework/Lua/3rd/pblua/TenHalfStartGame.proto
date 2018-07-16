@@ -1,0 +1,12 @@
+option java_package = "com.leyou.common.protobuf.card.tenhalf";
+option java_outer_classname = "TenHalfStartGame_pb"; 
+
+message TenHalfStartGameRes {
+	optional int32 zhuangIndex = 1; // 庄的索引位
+	optional int32 currJushu   = 2; //当前局数
+	optional int32 totalJushu  = 3; //总局数
+}
+
+
+
+ 

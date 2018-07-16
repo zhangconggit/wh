@@ -1,0 +1,76 @@
+
+Icon_Doudizhu.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/1111
+  rotate: false
+  xy: 847, 231
+  size: 119, 22
+  orig: 119, 22
+  offset: 0, 0
+  index: -1
+images/gebozuo
+  rotate: false
+  xy: 606, 136
+  size: 27, 50
+  orig: 27, 50
+  offset: 0, 0
+  index: -1
+images/guangquan
+  rotate: false
+  xy: 255, 20
+  size: 233, 233
+  orig: 233, 233
+  offset: 0, 0
+  index: -1
+images/huan
+  rotate: false
+  xy: 2, 2
+  size: 251, 251
+  orig: 251, 251
+  offset: 0, 0
+  index: -1
+images/meimao
+  rotate: false
+  xy: 255, 2
+  size: 31, 16
+  orig: 31, 16
+  offset: 0, 0
+  index: -1
+images/shenzi
+  rotate: false
+  xy: 490, 84
+  size: 114, 102
+  orig: 114, 102
+  offset: 0, 0
+  index: -1
+images/shou
+  rotate: false
+  xy: 756, 190
+  size: 89, 63
+  orig: 89, 63
+  offset: 0, 0
+  index: -1
+images/tou
+  rotate: false
+  xy: 648, 153
+  size: 106, 100
+  orig: 106, 100
+  offset: 0, 0
+  index: -1
+images/toufa
+  rotate: false
+  xy: 490, 46
+  size: 55, 36
+  orig: 55, 36
+  offset: 0, 0
+  index: -1
+images/z1
+  rotate: false
+  xy: 490, 188
+  size: 156, 65
+  orig: 156, 65
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,30 @@
+TH_RoleInfoPanel = {}
+setbaseclass(TH_RoleInfoPanel, {BasePanel})
+
+function TH_RoleInfoPanel:InitPanel()
+logWarn("-----------------------------------------TH_RoleInfoPanel")
+	self.btnClose 				= self:Child("btnClose")
+	self.objBig					= self:Child("Big")
+	self.objSmall				= self:Child("Small")
+
+	self.BimgHead				= self:Child("Big/imgHead")
+	self.BimgMan				= self:Child("Big/imgMan")
+	self.BimgWoman				= self:Child("Big/imgWoman")
+	self.BtxtName				= self:Child("Big/txtName")
+	self.BtxtID					= self:Child("Big/txtID")
+	self.BtxtIP					= self:Child("Big/txtIP")
+	self.BtxtInfoMine			= self:Child("Big/txtInfoMine")
+	self.BbtnE1					= self:Child("Big/scrbPanel/Grid/imgE1")
+	self.BbtnE2					= self:Child("Big/scrbPanel/Grid/imgE2")
+	self.BbtnE3					= self:Child("Big/scrbPanel/Grid/imgE3")
+	self.BbtnE4					= self:Child("Big/scrbPanel/Grid/imgE4")
+	self.BbtnE5					= self:Child("Big/scrbPanel/Grid/imgE5")
+	self.BbtnE6					= self:Child("Big/scrbPanel/Grid/imgE6")
+
+	self.SimgHead				= self:Child("Small/imgHead")
+	self.SimgMan				= self:Child("Small/imgMan")
+	self.SimgWoman				= self:Child("Small/imgWoman")
+	self.StxtName				= self:Child("Small/txtName")
+	self.StxtID					= self:Child("Small/txtID")
+	self.StxtIP					= self:Child("Small/txtIP")
+end

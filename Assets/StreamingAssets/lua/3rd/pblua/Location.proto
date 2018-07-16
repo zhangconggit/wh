@@ -1,0 +1,15 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "Location_pb"; 
+
+message LocationReq{
+	optional string locationInfo = 1; // 位置的信息，客户端自己拼接  
+}
+
+message LocationInfo{
+	optional int64 roleId = 1;
+	optional string locationInfo = 2; // 位置信息
+}
+
+message LocationRes {
+	repeated LocationInfo infos = 1;// 所有人位置集合
+}

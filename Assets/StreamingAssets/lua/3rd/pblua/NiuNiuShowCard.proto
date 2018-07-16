@@ -1,0 +1,15 @@
+option java_package = "com.leyou.common.protobuf.card.niuniu";
+option java_outer_classname = "NiuNiuShowCard_pb"; 
+
+import "CardInfo.proto";
+
+message NiuNiuShowCardReq  {
+    optional bool isShow = 1; //是否亮牌 ture是 false否
+}
+
+message NiuNiuShowCardRes {
+    optional int32 roleIndex = 1; // 玩家索引
+    repeated CardInfo cardInfo = 2; // 牌的列表
+    optional int32 cardType = 3; // 0.无牛 1~9.牛一~牛九 10.牛牛 11顺子牛 12五花牛，13同花牛，14葫芦牛，15炸弹牛，16金花牛，17五小牛
+    optional bool isShow = 4; //是否亮牌 ture是 false否/1提示 2亮牌
+}

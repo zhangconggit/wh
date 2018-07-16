@@ -1,0 +1,10 @@
+option java_package = "com.leyou.common.protobuf.card.tenhalf";
+option java_outer_classname = "TenHalfTurn_pb"; 
+
+import "CardInfo.proto";
+
+message TenHalfTurnRes {
+    optional int32 roleIndex = 1; // 玩家索引
+    optional CardInfo cardInfo = 2; // 牌的列表
+}
+

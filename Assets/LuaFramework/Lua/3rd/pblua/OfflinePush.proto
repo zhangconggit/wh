@@ -1,0 +1,7 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "OfflinePush_pb"; 
+
+message OfflinePushRes {
+	optional int64 roleId = 1; 
+	optional bool state = 2;  // true=上线  false=离线 
+}

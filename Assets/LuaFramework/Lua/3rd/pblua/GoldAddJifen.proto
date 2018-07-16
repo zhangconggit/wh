@@ -1,0 +1,20 @@
+option java_package = "com.leyou.common.protobuf.card.jinhua";
+option java_outer_classname = "GoldAddJifen_pb"; 
+
+message GoldAddJifenReq{
+    optional int32 addJifen  = 1;   // 加注数
+	optional int32 gen = 2;   // 1=跟注  2=加注 3=比牌
+}
+
+message GoldAddJifenRes {
+    optional int32 roleIndex = 1;   // 玩家索引
+    optional int32 addJifen  = 2;   // 加注数
+	optional bool stoc  = 3;   // 是否是服务器主动推送
+	optional int32 gen = 4;   // 1=跟注  2=加注 3=比牌
+	optional int32 nextOpIndex = 5;   // 下一个人的索引
+	optional int32 lunshu = 6;   // 轮数
+}
+
+
+
+ 

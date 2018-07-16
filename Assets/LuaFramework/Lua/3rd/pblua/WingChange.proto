@@ -1,0 +1,7 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "WingChange_pb"; 
+
+message WingChangeRes {
+    optional int32 WingType = 1; // 元宝类型
+    optional int64 WingVal = 2; // 元宝值
+}

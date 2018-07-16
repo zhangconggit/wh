@@ -1,0 +1,17 @@
+option java_package = "com.leyou.common.protobuf.card.doudizhu";
+option java_outer_classname = "CallLandlord_pd"; 
+
+message callLandlordReq {
+	optional bool call = 1;	  // 是否叫地主 true 叫  false 不叫
+}
+
+message callLandlordRes {
+	optional int32 callUserIndex = 1;	  // 叫地主玩家index
+	optional bool call = 2;				  //是否叫地主
+	optional int32 nextUserIndex = 3;     //下一个玩家操作索引
+}
+
+
+
+
+ 

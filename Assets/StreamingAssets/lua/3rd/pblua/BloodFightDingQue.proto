@@ -1,0 +1,16 @@
+option java_package = "com.leyou.common.protobuf.BloodFight"; 
+option java_outer_classname = "BloodFightDingQue_pb"; 
+
+message BloodFightDingQueReq{
+	required int32 signType = 1; // 标签操作类型
+}
+
+
+message BloodFightDingQueInfo{
+	required int32 signType = 1; // 标签操作类型
+    optional int32 roleIndex = 2;
+}
+
+message BloodFightDingQueRes {
+	repeated BloodFightDingQueInfo dingQueInfo = 1;
+}

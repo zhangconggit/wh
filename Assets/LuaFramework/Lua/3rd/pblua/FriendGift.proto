@@ -1,0 +1,10 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "FriendGift_pb"; 
+
+
+message FriendGiftReq{
+	optional int64 targerRoleId = 1; // 赠送人roleid
+	optional int32 diamondCount = 2; // 赠送钻石数量
+}
+
+// 成功返回IntTypeReturn.proto

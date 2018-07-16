@@ -1,0 +1,8 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "ShowCode_pb"; 
+
+message ShowCodeRes {
+    optional int32 showCode = 1; // 显示码
+    optional int64 roleId = 2;
+    repeated string codeParas = 3; //具体对应参数值
+}

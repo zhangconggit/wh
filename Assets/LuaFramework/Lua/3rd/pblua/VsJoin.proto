@@ -1,0 +1,15 @@
+option java_package = "com.leyou.common.protobuf.vs"; 
+option java_outer_classname = "VsJoin_pb"; 
+
+message VsJoinReq{
+	optional int32 vsType = 1; // 比赛类型 1=房卡 2=金币
+	optional int32 vsCount = 2; // 比赛人数
+	optional bool isRobot = 3; // 是否机器人调试
+}
+
+message VsJoinRes{
+	optional int32 vsType = 1; // 比赛类型 1=房卡 2=金币
+	optional int32 vsCount = 2; // 比赛人数
+	optional int64 roleId = 3; // roleId
+	optional int32 joinCount = 4; // 报名人数
+}

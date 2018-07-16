@@ -1,0 +1,158 @@
+ManifestFileVersion: 0
+CRC: 1229927499
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: common.unity3d
+      Dependencies: {}
+    Info_1:
+      Name: createroom.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_2:
+      Name: dissolutionroom.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_3:
+      Name: dissolutionroomtips.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_4:
+      Name: dissolutionsuccess.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_5:
+      Name: faceicon.unity3d
+      Dependencies: {}
+    Info_6:
+      Name: gamechat.unity3d
+      Dependencies: {}
+    Info_7:
+      Name: grade.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_8:
+      Name: gradedetail.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_9:
+      Name: joinroom.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_10:
+      Name: login.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_11:
+      Name: mainsence.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_12:
+      Name: messagetips.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_13:
+      Name: noticetips.unity3d
+      Dependencies: {}
+    Info_14:
+      Name: playmethod.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_15:
+      Name: audioplaymusic.unity3d
+      Dependencies: {}
+    Info_16:
+      Name: mahjongcard.unity3d
+      Dependencies: {}
+    Info_17:
+      Name: mahjongtable.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_18:
+      Name: uimahjongprefabs.unity3d
+      Dependencies: {}
+    Info_19:
+      Name: diamondpay.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_20:
+      Name: blocklayer.unity3d
+      Dependencies: {}
+    Info_21:
+      Name: playcardrole.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_22:
+      Name: faceanimation.unity3d
+      Dependencies: {}
+    Info_23:
+      Name: talk.unity3d
+      Dependencies: {}
+    Info_24:
+      Name: tip.unity3d
+      Dependencies: {}
+    Info_25:
+      Name: th_gamemain.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_26:
+      Name: uipokerprefab.unity3d
+      Dependencies: {}
+    Info_27:
+      Name: th_roleinfo.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_28:
+      Name: th_totalsettlement.unity3d
+      Dependencies: {}
+    Info_29:
+      Name: activity.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_30:
+      Name: share.unity3d
+      Dependencies: {}
+    Info_31:
+      Name: gpsinfo.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_32:
+      Name: ui_niuniu.unity3d
+      Dependencies: {}
+    Info_33:
+      Name: rotarytable.unity3d
+      Dependencies: {}
+    Info_34:
+      Name: ranklist.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_35:
+      Name: ll_gamemain.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_36:
+      Name: animationcoin.unity3d
+      Dependencies: {}
+    Info_37:
+      Name: gamesetting.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_38:
+      Name: ob_gamemain.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_39:
+      Name: rm_gamemain.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_40:
+      Name: myclub.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_41:
+      Name: xz_gamemain.unity3d
+      Dependencies:
+        Dependency_0: common.unity3d
+    Info_42:
+      Name: dalycheck.unity3d
+      Dependencies: {}

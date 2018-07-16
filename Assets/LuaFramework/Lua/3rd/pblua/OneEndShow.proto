@@ -1,0 +1,21 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "OneEndShow_pb"; 
+
+import "ChessInfo.proto";
+
+message OneEndInfo{
+	optional int64 roleId = 1;
+	optional int32 jifen = 2; // 总积分 
+	optional int32 oneGangjifen = 3; // 每局的杠分
+	optional int32 oneSumjifen = 4; // 每局的总分
+	repeated ChessInfo chessInfo = 5; // 牌的集合
+	optional int32 fanRate = 6; // 番数
+}
+
+// 注意：结束类型为1或2的时候。胡牌人id不为0,对应胡类型。
+message OneEndShowRes {
+	repeated int64 winRoleIds = 1; // 胡牌人id，会有多响的情况
+	repeated int32 huTypes = 2; // 胡的类型 1=平胡 2=对对胡 3=豪华对对胡 4=杠开 5=抢杠
+	optional int32 endType = 3; // 当前局的结束类型  1=自摸 2=胡 3=摸牌摸完了 4=解散房间 3个人点了同意 5=解散房间 时间到了
+	repeated OneEndInfo oneEndInfos = 4; // 每局结算的集合
+}

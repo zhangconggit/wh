@@ -1,0 +1,19 @@
+option java_package = "com.leyou.common.protobuf.card.niuniu";
+option java_outer_classname = "NiuNiuChange_pb"; 
+
+import "CardInfo.proto";
+
+message NiuNiuChangeReq{
+    optional int32 roleIndex = 1; //玩家索引
+    optional string changeCard=2;//换牌的信息,以逗号分割
+}
+
+message NiuNiuChangeRes {
+    optional int32 roleIndex = 1;  //玩家索引
+    repeated CardInfo cardInfo = 2;   //牌的信息
+    optional bool isChange=3;//是否换牌
+}
+
+
+
+ 

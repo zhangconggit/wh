@@ -1,0 +1,29 @@
+option java_package = "com.leyou.common.protobuf";
+option java_outer_classname = "RankingOrder_pb";
+
+message RankingReq{
+	required int32 rankType= 1;// 排名类型 1 金币 2 元宝
+}
+
+message RankingUserInfo{
+	optional int32 index = 1; //排名
+	optional int64 roleId = 2; //用户ID
+	optional string name = 3;  //用户名称
+	optional string ip = 4;      // 用户IP
+	optional string headImg = 5; 
+	optional int32 gender = 6; // 性别
+	optional int64 diamond = 7; // 钻石数
+	optional int64 goldcoin = 8; // 金币数
+	optional int64 wing = 9; // 元宝数
+	optional string singleSign= 10; //个性签名
+}
+
+message RankingRes{
+	optional bool onTheList = 1; //true 榜上有名 false 未上榜
+    optional int32 ranking = 2; //榜上有名 多少排名
+	repeated RankingUserInfo rankingUserInfoList = 3;//排名infolist
+	optional int32 rankType= 4;// 排名类型 1 金币 2 元宝
+
+}
+
+ 

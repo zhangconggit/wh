@@ -1,0 +1,12 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "ConvertCoin_pb"; 
+
+message ConvertCoinReq {
+	required int32 productId = 1; // 商品编号
+}
+
+message ConvertCoinRes {
+    required int32 errorCode = 1; // 错误码 0 对换成功， 1 元宝不足， 2 金币已达上限
+    required int64 costWing = 2; // 消耗的元宝数量
+    required int64 gainCoin = 3; // 获得的金币数量
+}

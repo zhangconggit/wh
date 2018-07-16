@@ -1,0 +1,14 @@
+option java_package = "com.leyou.common.protobuf.vs"; 
+option java_outer_classname = "VsGetJoinCount_pb"; 
+
+
+message VsGetJoinCountReq {
+	optional int32 vsType = 1; // 比赛类型
+	optional int32 vsCount = 2; // 比赛总人数
+}
+// 获取比赛报名人数
+message VsGetJoinCountRes {
+	optional int32 vsType = 1; // 比赛类型
+	optional int32 vsCount = 2; // 比赛总人数
+	optional int32 vsJoinCount = 3; // 比赛报名人数
+}

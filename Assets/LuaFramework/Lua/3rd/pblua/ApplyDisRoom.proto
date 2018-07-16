@@ -1,0 +1,16 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "ApplyDisRoom_pb"; 
+	 
+message ApplyDisRoomInfo{
+	optional int64 roleId = 1;
+	optional string name = 2;
+	optional bool state = 3; // 玩家操作的状态 true=同意 false=拒绝
+}
+
+message ApplyDisRoomRes {
+    optional int32 showCode = 1; // 显示码
+    optional int64 roleId = 2;
+    optional string name = 3; // 名字
+    optional int64 ms = 4; // 时间。单位分钟 
+    repeated ApplyDisRoomInfo disRoomInfo = 5; // 上面的参数是发起人的信息，这个参数是其他3个玩家信息
+}

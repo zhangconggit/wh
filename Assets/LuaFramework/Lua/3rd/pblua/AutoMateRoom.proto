@@ -1,0 +1,8 @@
+option java_package = "com.leyou.common.protobuf";
+option java_outer_classname = "AutoMateRoom_pb"; 
+
+message AutoMateRoomReq {
+    optional int32 gameType = 1; //游戏类型 1.麻将 2.十点半 3炸金花 4捉麻子 5牛牛 6五子棋 7红中麻将
+	optional int32 roomType = 2; //房间类型 1金币场，2元宝场，3房卡场
+	optional int32 placeType = 3; //场次类型 1初级场 2中级场 3高级场 4豪华场 5大豪华场	 
+}

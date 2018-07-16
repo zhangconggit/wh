@@ -1,0 +1,8 @@
+option java_package = "com.leyou.common.protobuf.card"; 
+option java_outer_classname = "CardInfo_pb"; 
+
+message CardInfo { 
+  optional int32 id = 1; // 牌的唯一id
+  optional int32 color = 2; // 牌的花色
+  optional int32 num = 3; // 牌的数值
+} 

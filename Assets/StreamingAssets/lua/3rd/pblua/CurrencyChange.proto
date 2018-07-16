@@ -1,0 +1,7 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "CurrencyChange_pb"; 
+
+message CurrencyChangeRes {
+    optional int32 currencyType = 1; // 货币类型
+    optional int64 currencyVal = 2; // 货币值
+}

@@ -1,0 +1,16 @@
+option java_package = "com.leyou.common.protobuf.card.niuniu";
+option java_outer_classname = "NiuNiuTurn_pb"; 
+
+import "CardInfo.proto";
+
+
+message NiuNiuTurnRes{
+	repeated NiuNiuTurnInfo infos = 1;
+}
+
+message NiuNiuTurnInfo {
+  optional int32 roleIndex = 1; // 玩家索引
+  repeated CardInfo cardInfo = 2; // 牌的列表
+	optional int32 cardType = 3; // 0.无牛 1~9.牛一~牛九 10.牛牛 11代表顺子牛 12代表五花牛，13代表同花牛，14代表葫芦牛，15代表炸弹牛，16代表金花牛，17代表五小牛
+}
+

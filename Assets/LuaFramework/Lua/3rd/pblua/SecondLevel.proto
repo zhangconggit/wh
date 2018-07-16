@@ -1,0 +1,22 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "SecondLevel_pb"; 
+
+message SecondLevelReq {
+	optional int32 moneyType = 1; //2元宝 1金币
+	optional int32 gameType  = 2; //   1=麻将 2=十点半 3=炸金花 4 = 捉麻子 5=牛牛 6=五子棋 7=红中麻将 9=血战麻将
+}
+
+message SecondLevelRes {
+	repeated SecondLevelInfo secondLevelInfo = 1;	//底金
+
+}
+
+message SecondLevelInfo
+{
+	optional int64 baseNumber = 1;//底分
+	optional int32 playType = 2; //1初级 2中级 3 高级 4....
+	optional int64 qualifications = 3; //几进几出
+	optional int64 deduction = 4; //扣除金币元宝
+ 	optional int64 state = 5; //状态  	//流畅1     火热 2      拥挤 3      爆满4
+}
+

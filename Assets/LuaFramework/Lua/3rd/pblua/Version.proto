@@ -1,0 +1,10 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "Version_pb"; 
+
+message VersionRes { 
+  required string uuuIdKey = 1; 
+  optional string version = 2;
+  optional string appId = 3;
+  optional string appSecret = 4;
+  optional int32 onlySign = 5;
+} 

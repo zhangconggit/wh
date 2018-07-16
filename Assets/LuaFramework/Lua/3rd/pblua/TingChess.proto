@@ -1,0 +1,17 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "TingChess_pb"; 
+
+message TingChessInfo {
+	optional string huChess = 1;
+	optional int32 fan = 2;
+	optional int32 leftCount = 3;
+}
+
+message TingChessAllInfo{
+	optional string dropChess = 1;
+	repeated TingChessInfo tingChessInfo = 2;
+}
+// 听牌提示
+message TingChessRes {
+	repeated TingChessAllInfo tingAllInfo = 1;
+}

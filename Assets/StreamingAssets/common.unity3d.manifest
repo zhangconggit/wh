@@ -1,0 +1,208 @@
+ManifestFileVersion: 0
+CRC: 3672779880
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b32726dd9379f6d5bb5e3ada45d5fb61
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: fc0a2c27055b45c2e686eed85f3b2793
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/erweima.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/background_004.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/background_002.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/headBiankuang.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/arrowBg.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/jiesanfangjianTitle.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/inlinelittle.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/notselected.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zhanBG1.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/doudizhu 1.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/TuoGuanZheZhao.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/shu.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/head_img_player.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/xianlaiwan.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/wuziqi 1.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/leftarrowOn.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zhanBG2.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/guanyu.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/nan.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/yy.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/xuezhan 2.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/lefttogon.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/imgGift.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/gonggao.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/background_003.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/yuyinBtn.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/new_fangjianhaobg.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/background_005.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/yunousedown.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/roomcard.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/Fanselected.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/tongkuang.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/tuidaohu 1.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/tongyi.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/cebianbg.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/hongzhong 1.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zhanjiTuichu.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/yinx.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zhanFu.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/notFanselected.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/an.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/GameLoginFuXuanKuangDownState.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zz.PNG
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/touxiangMask3.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/dong.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/head_img_female.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/qq.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/shidianban 1.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/bg_3.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zhanPing.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/wenxitishi.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/play2.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/niuniu 1.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/xiaogonggao.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/selected.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/new_guanbibtn.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/huashui.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/background_006.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/background_007.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zhanjiTitle.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/ping.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/tuichu.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/msgR.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/CopyTips.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zhuomazi 1.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zhajinghua.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/quxiao.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/tuidaohu.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/xieyibgtog.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/jinkuang.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/dong_3.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/btncebiankai.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/shidianban 2.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/queding.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/niuniu 2.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/touxiangkuang.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zhuomazi.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/huifang.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/huifangBtn.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/bei.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/niuniu.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/cancel.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/yuuse.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/play3.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/liang.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/GameCreateWanfaImage.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/bg_xiangqing.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/xuezhan 1.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zhajinhua.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/yuinput.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/xiangqingzhanji.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/bg_1.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/cebianguan.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/togBg.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/timeBg.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/topline.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/roleHead.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/yuup.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/QuXiaoTuoGuan.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/WuZi.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/xieyi.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/anniu2.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/paihang kuang.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/stripBg.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/msgL.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/GameCreateJushuImage.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/wuziqi 2.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/touxiang.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/create.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/tuidaohu 2.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/shuzikuang.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/btnTouristLogin.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/imgGold.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/bigline.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/paodekuai1.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/fenxiangzhanji.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/fenxiang.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/new_touxiangbiankuang.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/fz.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/Copy.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/itemBG.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/Back.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/littleline.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/lefttogoff.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/sys.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/background_001.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zhanjiScrollViewBG.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/dong_1.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/icon.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/jujue.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/btnWeChatLogin.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/line_001.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/determine.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/HongZhong.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/arrow.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/jindu.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zhanjixiangqingTitle.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/ying.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/DouDiZhu.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/NoWaitQuitRoom.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/doudizhu 2.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/head_img_male.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zhanjitaitou.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/inlinebig.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zhuomazi 2.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/WaitQuitRoom.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/NoGameMainQuitRoom.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/draw_backgroundA.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/fenxiangBtn.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/fasong.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/greadePaodekuai.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/gz.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/yiny.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/TuoGuanBtn.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/pinsanzhang 2.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zuomazi.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/GameMainQuitRoom.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/leftgroupBg.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/xinxidiban.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/greybeijing.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/yunouseup.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/new_hu.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/fankui.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/mask.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/shidianban.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/hongzhong 2.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zhanjiTitleDiBG.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/yinkuang.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/xiangqingkuang.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/xieyibg.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/fankuiTitles.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zhanjixiangqingTitleDownBg.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/grade.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/zhanShen.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/wxx.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/msgU.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/wuziqi.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/playingbiaoqingkuang.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/playingbackground.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/XueZhan.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/xi.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/background_WenZiKuang.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/shaizi.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/chuangjianfangjianTitle.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/bg_bianhao.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/noticeBG.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/leftarrowOff.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/paodekuai2.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/bg_mingzi.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/qiehuan.png
+- Assets/Art/Atlas/_Common/Mahjong/mj_uiCommon/pinsanzhang 1.png
+Dependencies: []

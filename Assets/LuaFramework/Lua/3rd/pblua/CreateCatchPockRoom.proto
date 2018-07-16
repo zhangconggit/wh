@@ -1,0 +1,14 @@
+option java_package = "com.leyou.common.protobuf.card.zhuomazi";
+option java_outer_classname = "CreateCatchPockRoomReq_pb"; 
+
+message CreateCatchPockRoomReq{
+	required int32 zhuoMaZiTotal 			= 1; 	// 总局数
+}
+
+message CreateCatchPockRoomRes {
+	optional int32 roomNum = 1; // 房间号
+	optional int32 baseNum = 2; // 底金
+	optional int32 qualified = 3; // 合格金额
+	optional int32 moneyType = 4; //金币OR元宝 1金币 2元宝	
+	optional int32 mcreenings = 5; //1初级场 2中级场 3高级场 4......
+}

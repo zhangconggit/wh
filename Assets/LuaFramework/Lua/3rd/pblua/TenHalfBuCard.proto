@@ -1,0 +1,19 @@
+option java_package = "com.leyou.common.protobuf.card.tenhalf";
+option java_outer_classname = "TenHalfBuCard_pb"; 
+
+import "CardInfo.proto";
+
+message TenHalfBuCardReq  {
+    optional bool isBuCard = 1; //是否补牌
+}
+
+message TenHalfBuCardRes {
+    optional int32 roleIndex = 1; // 玩家索引
+    repeated CardInfo cardInfo = 2; // 牌的列表
+    optional int32 cardType = 3; //1=爆牌 2=十点半以下 3.十点半 4.五雷 5.五花雷 6.十点半雷 
+    optional bool isBuCard = 4; //是否补牌
+}
+
+
+
+ 

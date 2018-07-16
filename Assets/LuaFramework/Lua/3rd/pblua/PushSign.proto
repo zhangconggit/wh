@@ -1,0 +1,7 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "PushSign_pb"; 
+
+message PushSignRes {
+	repeated int32 signs = 1; // 推送标签的集合 1=碰 2=暗杠 3=明杠4=过路杠 5=胡 6=自摸 7=过(注意：7不会给客户端推送，只要有其他类型，客户端自带7)
+    optional int64 roleId = 2;
+}

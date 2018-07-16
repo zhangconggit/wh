@@ -1,0 +1,46 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "PlayBack_pb";
+ 
+import "ChessInfo.proto";
+
+message PlayBackReq {
+	optional int32 id = 1; // 战绩的id
+	optional int32 jushu = 2; // 战绩的局数
+}
+
+// 牌初始化类型操作，其他类型都用之前的
+message PlayBackInitRoleInfo{
+	optional int64 roleId = 1;
+	optional int32 roleIndex = 2;
+	optional string name = 3;
+	optional int32 jifen = 4;
+	repeated ChessInfo chessInfos = 5; // 牌的列表
+}
+
+// 牌初始化类型操作，其他类型都用之前的
+message PlayBackInitChesses{
+	optional int32 roomNum = 1;
+	optional bool zimohu = 2; 
+	optional bool feng = 3; 
+	optional bool hongzhong = 4; 
+	optional int32 yu = 5;
+	optional int32 jushu = 6; // 总局数
+	optional int32 alreadyJuShu = 7; // 已经打了的局数
+	optional int64 curStartDate = 8; // 当前局的开始时间
+	optional int32 zhuang = 9; // 庄的索引
+    optional int32 zhuaIndex = 10; // 在谁那开始抓牌索引
+    optional int32 shaiziMin = 11; // 骰子最小数（从第几个开始抓牌）
+    optional int32 shaiziMax = 12; // 骰子最大值
+    repeated PlayBackInitRoleInfo roleInfos = 13; // 回放角色信息
+	optional int32 modeType = 14; // 模式: 1=AA 2=老板模式
+}
+
+message PlayBackInfo {
+	optional int32 buzhouId = 1; // 步骤序号
+    optional int32 type = 2; // 类型 1=牌的初始化 2=摸牌 3=标签提示 4=标签操作 5=打牌
+    optional bytes data = 3; // 具体干了啥
+}
+
+message PlayBackRes {
+	repeated PlayBackInfo playBackInfo = 1;
+}

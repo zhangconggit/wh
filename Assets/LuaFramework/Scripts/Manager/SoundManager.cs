@@ -1,0 +1,225 @@
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace LuaFramework {
+    public class SoundManager : Manager {
+        //private AudioSource audio;
+        private Hashtable sounds = new Hashtable();
+        string BackSoundKey = "";
+
+        void Start()
+        {
+            //audio = GetComponent<AudioSource>();
+            //if (audio == null)
+            //{
+            //    gameObject.AddComponent<AudioSource>();
+            //}
+        }
+
+        //回调函数原型
+        private delegate void GetBack(AudioClip clip, string key);
+
+        //获取声音资源
+        private void Get(string abName, string assetName, GetBack cb)
+        {
+            string key = abName + "." + assetName;
+			if (!sounds.ContainsKey(key))
+            {
+                ResManager.LoadAudioClip(abName, assetName, (objs) =>
+                {
+                    if (objs == null || objs[0] == null)
+                    {
+                        Debug.Log("PlayBackSound fail");
+                        cb(null, key);
+                        return;
+                    }
+                    else
+                    {
+                        sounds.Add(key, objs[0]);
+                        cb(objs[0] as AudioClip, key);
+                        return;
+                    }
+                });
+            }
+            else
+            {
+                cb(sounds[key] as AudioClip, key);
+                return;
+            }
+        }
+
+        //播放背景音乐
+        public void PlayBackSound(AudioSource audio, string abName, string assetName) {
+            BackSoundKey = abName + "." + assetName;
+            Get(abName,assetName,(clip, key)=>
+            {
+                if (clip == null)
+                    return;
+                if (key != BackSoundKey)
+                    return;
+
+                audio.loop = true;
+                audio.clip = clip;
+                audio.Play();
+            });
+        }
+
+        //播放打牌音效
+        public void PlayCardSound(AudioSource audio, string abName, string assetName)
+        {
+
+            BackSoundKey = abName + "." + assetName;
+            Get(abName, assetName, (clip, key) =>
+            {
+                if (clip == null)
+                    return;
+                if (key != BackSoundKey)
+                return;
+                if (audio.isPlaying)
+                {
+                    AudioSource.PlayClipAtPoint(clip, audio.transform.localPosition);
+                }
+                else
+                {
+                    audio.loop = false;
+                    audio.clip = clip;
+                    audio.Play();
+                }
+            });
+        }
+
+
+        //播放音效
+        public void PlayEffectSound(AudioSource audio, string abName, string assetName)
+        {
+
+            BackSoundKey = abName + "." + assetName;
+            Get(abName, assetName, (clip, key) =>
+            {
+                if (clip == null)
+                    return;
+                if (key != BackSoundKey)
+                    return;
+                if (audio.isPlaying)
+                {
+                    audio.Stop();
+                }
+                audio.loop = false;
+                audio.clip = clip;
+                audio.Play();
+            });
+        }
+
+        //播放音效
+        public void PlayTalkSound(AudioSource audio, string abName, string assetName)
+        {
+            BackSoundKey = abName + "." + assetName;
+            Get(abName, assetName, (clip, key) =>
+            {
+                if (clip == null)
+                    return;
+                if (key != BackSoundKey)
+                    return;
+                if (audio.isPlaying)
+                {
+                    audio.Stop();
+                }
+                audio.loop = false;
+                audio.clip = clip;
+                audio.Play();
+            });
+        }
+
+        //停止背景音乐
+        public void StopBackSound(AudioSource audio) {
+            BackSoundKey = "";
+            audio.Stop();
+        }
+
+
+        ///// <summary>
+        ///// 添加一个声音
+        ///// </summary>
+        //void Add(string key, AudioClip value) {
+        //    if (sounds[key] != null || value == null) return;
+        //    sounds.Add(key, value);
+        //}
+
+        ///// <summary>
+        ///// 获取一个声音
+        ///// </summary>
+        //AudioClip Get(string key) {
+        //    if (sounds[key] == null) return null;
+        //    return sounds[key] as AudioClip;
+        //}
+
+        ///// <summary>
+        ///// 载入一个音频
+        ///// </summary>
+        //public AudioClip LoadAudioClip(string path) {
+        //    AudioClip ac = Get(path);
+        //    if (ac == null) {
+        //        ac = (AudioClip)Resources.Load(path, typeof(AudioClip));
+        //        Add(path, ac);
+        //    }
+        //    return ac;
+        //}
+
+        ///// <summary>
+        ///// 是否播放背景音乐，默认是1：播放
+        ///// </summary>
+        ///// <returns></returns>
+        //public bool CanPlayBackSound() {
+        //    string key = AppConst.AppPrefix + "BackSound";
+        //    int i = PlayerPrefs.GetInt(key, 1);
+        //    return i == 1;
+        //}
+
+        ///// <summary>
+        ///// 播放背景音乐
+        ///// </summary>
+        ///// <param name="canPlay"></param>
+        //public void PlayBacksound(string name, bool canPlay) {
+        //    if (audio.clip != null) {
+        //        if (name.IndexOf(audio.clip.name) > -1) {
+        //            if (!canPlay) {
+        //                audio.Stop();
+        //                audio.clip = null;
+        //                Util.ClearMemory();
+        //            }
+        //            return;
+        //        }
+        //    }
+        //    if (canPlay) {
+        //        audio.loop = true;
+        //        audio.clip = LoadAudioClip(name);
+        //        audio.Play();
+        //    } else {
+        //        audio.Stop();
+        //        audio.clip = null;
+        //        Util.ClearMemory();
+        //    }
+        //}
+
+        ///// <summary>
+        ///// 是否播放音效,默认是1：播放
+        ///// </summary>
+        ///// <returns></returns>
+        //public bool CanPlaySoundEffect() {
+        //    string key = AppConst.AppPrefix + "SoundEffect";
+        //    int i = PlayerPrefs.GetInt(key, 1);
+        //    return i == 1;
+        //}
+
+        ///// <summary>
+        ///// 播放音频剪辑
+        ///// </summary>
+        ///// <param name="clip"></param>
+        ///// <param name="position"></param>
+        //public void Play(AudioClip clip, Vector3 position) {
+        //    if (!CanPlaySoundEffect()) return;
+        //    AudioSource.PlayClipAtPoint(clip, position); 
+        //}
+    }
+}

@@ -1,0 +1,17 @@
+option java_package = "com.leyou.common.protobuf.card.zhuomazi";
+option java_outer_classname = "CatchPopCard_pb"; 
+
+import "CardInfo.proto";
+
+message CatchPopCardReq{
+	optional string handCard = 1; //玩家出牌的ID,以逗号分割
+}
+
+message CatchPopCardRes {
+    optional int32 roleIndex 	= 1; // 玩家索引
+	repeated CardInfo cardInfo	= 2; // 牌的列表
+	optional int32 cardType    	= 3; // 0 =未出牌; 1 = 不出牌; 2 = AAA炸弹; 3 = 普通炸; 4 = 三个不带; 5 = 三带一; 6 = 三带二; 7 = 四带2单牌;
+									// 8 = 四带一对; 9 = 顺子; 10 = 连对; 11 = 飞机; 12 = 飞机带单牌; 13 = 飞机带对子; 14 = 对子;
+									// 15 = 单牌; 
+	optional int32 leftCards 	= 4; // 剩余牌数
+}

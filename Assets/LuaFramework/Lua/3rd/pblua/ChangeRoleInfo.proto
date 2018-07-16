@@ -1,0 +1,6 @@
+option java_package = "com.leyou.common.protobuf";
+option java_outer_classname = "ChangeRoleInfo_pb"; 
+
+message ChangeRoleInfoReq{
+    optional string shortDesc = 1; //玩家个人签名
+}

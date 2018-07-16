@@ -1,0 +1,8 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "IntTypeReturn_pb"; 
+
+
+
+message IntTypeReturnRes {
+    required int32 intVal = 1; // 返回的int型值，此类是通用类
+}

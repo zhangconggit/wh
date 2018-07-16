@@ -1,0 +1,12 @@
+option java_package = "com.leyou.common.protobuf.vs"; 
+option java_outer_classname = "VsTrusteeship_pb"; 
+
+// 托管
+message VsTrusteeshipReq{
+	optional bool isTrusteeship = 1; // 是否托管
+}
+
+message VsTrusteeshipRes {
+	optional int64 roleId = 1; // roleId
+	optional bool isTrusteeship = 2; // 是否托管
+}

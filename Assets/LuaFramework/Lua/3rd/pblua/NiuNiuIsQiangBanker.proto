@@ -1,0 +1,15 @@
+option java_package = "com.leyou.common.protobuf.card.niuniu";
+option java_outer_classname = "NiuNiuIsQiangBanker_pb"; 
+
+message NiuNiuIsQiangBankerReq    {
+    optional int32 score=1;//抢庄倍数
+}
+
+message NiuNiuIsQiangBankerRes {
+	optional int32 	roleIndex 	=1;	//当前抢庄的人索引
+    optional int32 	zhuangIndex =2;	//庄的索引
+    optional bool	isRand		=3;	//是否随机
+    optional int32 	score		=4;	//抢的倍数
+    optional int32  betScore	=5;	//推注倍数 0为不推注 20,40,60
+	repeated int32  bankIndex   =6; //抢庄的index 最大抢庄玩家的index
+}

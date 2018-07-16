@@ -1,0 +1,15 @@
+option java_package = "com.leyou.common.protobuf";  
+option java_outer_classname = "PushSignOperate_pb"; 
+
+import "ChessInfo.proto";
+
+message PushSignOperateReq{
+	required int32 signType = 1; // 标签操作类型
+}
+
+message PushSignOperateRes {
+	optional int64 roleId = 1;
+	optional int32 roleIndex = 2;
+	optional int32 signType = 3;
+	repeated ChessInfo chessInfo = 4;
+}

@@ -1,0 +1,15 @@
+option java_package = "com.leyou.common.protobuf.card.tenhalf";
+option java_outer_classname = "TenHalfSingleSettlement_pb"; 
+import "CardInfo.proto";
+message TenHalfSingleSettlementRes {
+    repeated SettlementInfo settlementInfo = 1;  //玩家信息列表
+}
+
+message SettlementInfo{
+    optional int32 roleIndex = 1; // 玩家索引
+    optional int32 curJiFen = 2; // 当前赢或者输的分数
+    optional int32 jiFen = 3; // 头像底下的总积分
+	repeated CardInfo cardInfo = 4; // 牌的列表
+	optional int32 cardType = 5; // 牌型
+}
+

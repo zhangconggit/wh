@@ -1,0 +1,127 @@
+{
+"skeleton": { "hash": "I8szj98pPwJN+zeWi+Qy+XR9M9Y", "spine": "3.4.02", "width": 249, "height": 249, "images": "./images/" },
+"bones": [
+	{ "name": "root", "x": -124.5, "y": -124.5 },
+	{ "name": "tou", "parent": "root", "x": 127.25, "y": 153.34 },
+	{ "name": "biyan", "parent": "tou", "x": -16.58, "y": 50.65 },
+	{ "name": "eryou", "parent": "tou", "length": 25.13, "rotation": -11.5, "x": 22.88, "y": 53.19 },
+	{ "name": "erzuo", "parent": "tou", "length": 20.83, "rotation": -166.69, "x": -26.59, "y": 52.1 },
+	{ "name": "guangquan", "parent": "root", "x": 124.5, "y": 124.5 },
+	{ "name": "shenzi", "parent": "root", "x": 127.25, "y": 134.81 }
+],
+"slots": [
+	{ "name": "huan1", "bone": "root", "attachment": "huan1" },
+	{ "name": "guangquan", "bone": "guangquan", "color": "ffffff6f", "attachment": "guangquan", "blend": "additive" },
+	{ "name": "eryou", "bone": "eryou", "attachment": "eryou" },
+	{ "name": "erzuo", "bone": "erzuo", "attachment": "erzuo" },
+	{ "name": "tou", "bone": "tou", "attachment": "tou" },
+	{ "name": "shenzi", "bone": "shenzi", "attachment": "shenzi" },
+	{ "name": "biyan", "bone": "biyan", "attachment": "biyan" },
+	{ "name": "zi", "bone": "root", "attachment": "zi" }
+],
+"skins": {
+	"default": {
+		"biyan": {
+			"biyan": { "x": 1.33, "y": -0.49, "width": 26, "height": 15 }
+		},
+		"eryou": {
+			"eryou": { "x": 14.28, "y": -0.69, "rotation": 11.5, "width": 28, "height": 16 }
+		},
+		"erzuo": {
+			"erzuo": { "x": 12.01, "y": 0.18, "rotation": 166.69, "width": 26, "height": 19 }
+		},
+		"guangquan": {
+			"guangquan": { "width": 231, "height": 231 }
+		},
+		"huan1": {
+			"huan1": { "x": 124.5, "y": 124.5, "width": 249, "height": 249 }
+		},
+		"shenzi": {
+			"shenzi": { "x": -6.75, "y": 2.68, "width": 171, "height": 131 }
+		},
+		"tou": {
+			"tou": { "x": -4.75, "y": 36.15, "width": 103, "height": 97 }
+		},
+		"zi": {
+			"zi": { "x": 105, "y": 61.5, "width": 146, "height": 67 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"biyan": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2, "color": "ffffff00" },
+					{ "time": 2.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.1666, "color": "ffffffff" },
+					{ "time": 2.2, "color": "ffffff00" }
+				]
+			},
+			"guangquan": {
+				"color": [
+					{ "time": 0, "color": "ffffff2c" },
+					{ "time": 1.6666, "color": "ffffff86" },
+					{ "time": 3.3333, "color": "ffffff2c" }
+				]
+			}
+		},
+		"bones": {
+			"shenzi": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1.6666, "angle": -2.44 },
+					{ "time": 3.3333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": -13.11 },
+					{ "time": 1.6666, "x": 0, "y": -2.95 },
+					{ "time": 3.3333, "x": 0, "y": -13.11 }
+				]
+			},
+			"tou": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 0.5, "angle": 0, "curve": "stepped" },
+					{ "time": 1.2, "angle": 0 },
+					{ "time": 2.1, "angle": 10.09 },
+					{ "time": 3.3333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": -13.57, "curve": "stepped" },
+					{ "time": 0.2333, "x": 0, "y": -13.57 },
+					{ "time": 1.6666, "x": 0, "y": -5.61, "curve": "stepped" },
+					{ "time": 2, "x": 0, "y": -5.61 },
+					{ "time": 3.3333, "x": 0, "y": -13.57 }
+				]
+			},
+			"erzuo": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 2.4, "angle": 0 },
+					{ "time": 2.4666, "angle": 9.01 },
+					{ "time": 2.5333, "angle": -6.42 },
+					{ "time": 2.6, "angle": 0 }
+				]
+			},
+			"eryou": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 2.7, "angle": 0 },
+					{ "time": 2.7666, "angle": 9.01 },
+					{ "time": 2.8333, "angle": -6.42 },
+					{ "time": 2.9, "angle": 0 }
+				]
+			},
+			"guangquan": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1.6666, "angle": -179.82 },
+					{ "time": 3.3333, "angle": 0.4 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,9 @@
+option java_package = "com.leyou.common.protobuf.card.niuniu";
+option java_outer_classname = "NiuNiuStatusChange_pb"; 
+
+
+message NiuNiuStatusChangeRes {
+    optional int32 roleIndex = 1;  // 玩家索引
+    optional int32 status = 2;   //1准备 2换牌 3抢庄 4下注 5亮牌 
+    optional int32 time=3;//倒计时时间
+}

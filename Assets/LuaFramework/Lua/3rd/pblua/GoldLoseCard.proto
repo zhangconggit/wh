@@ -1,0 +1,9 @@
+option java_package = "com.leyou.common.protobuf.card.jinhua";
+option java_outer_classname = "GoldLoseCard_pb"; 
+
+// 弃牌pb
+message GoldLoseCardRes {
+    optional int32 roleIndex = 1; // 弃牌玩家索引
+	optional int32 nextOpIndex = 2;   // 下一个人的索引
+	optional int32 lunshu = 3;   // 轮数
+}

@@ -1,0 +1,16 @@
+option java_package = "com.leyou.common.protobuf.card.doudizhu";
+option java_outer_classname = "DouDiZhuPockDeal_pb"; 
+
+import "CardInfo.proto";
+
+message DouDiZhuPockDealRes {
+    optional int32 roleIndex   = 1;   // 玩家索引
+	repeated CardInfo cardInfo = 2;	  // 牌的信息
+	optional int32 firstIndex  = 3;   // 先出牌人的索引
+	optional int32 currentMultiple = 4;	  // 当前倍数
+	optional bool open = 5;				//是否明牌
+}
+
+
+
+ 

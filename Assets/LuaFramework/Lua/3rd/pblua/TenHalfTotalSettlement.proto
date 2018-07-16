@@ -1,0 +1,24 @@
+option java_package = "com.leyou.common.protobuf.card.tenhalf";
+option java_outer_classname = "TenHalfTotalSettlement_pb"; 
+
+message TenHalfTotalSettlementInfo{
+    optional int64 roleId = 1;
+    optional int32 roleIndex = 2;
+    optional string roleName = 3;
+    optional int32 danJuMax = 4;
+    optional int32 maxCardType = 5;
+    optional int32 winJuShu = 6;
+    optional int32 lostJuShu = 7;
+    optional int32 roleFenShu = 8;
+}
+
+message TenHalfTotalSettlementRes {
+	optional int64 roomNum = 1; // 房间号
+    optional int32 totalJushu = 2; // 总局数
+    repeated TenHalfTotalSettlementInfo totalSettlementInfo = 3; // list，总结算信息
+    optional int64 endTime = 4; //结算结束时间
+}
+
+
+
+ 

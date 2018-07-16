@@ -1,0 +1,10 @@
+option java_package = "com.leyou.common.protobuf.chess.wuziqi";
+option java_outer_classname = "RoleLose_pb";  
+
+message RoleLoseRes {
+	optional int32 roleIndex = 1; //谁点了认输
+    optional int32 winIndex = 2; // 获胜的玩家索引
+	optional int32 loseIndex = 3; // 失败的玩家索引
+    optional int64  bet = 4; // 学费/输了/赢了元宝数
+
+}

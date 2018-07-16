@@ -1,0 +1,76 @@
+
+Icon_Hongzhongmajiang.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bz
+  rotate: false
+  xy: 586, 62
+  size: 45, 28
+  orig: 45, 28
+  offset: 0, 0
+  index: -1
+erd
+  rotate: true
+  xy: 855, 202
+  size: 49, 50
+  orig: 49, 50
+  offset: 0, 0
+  index: -1
+erd1
+  rotate: false
+  xy: 488, 47
+  size: 96, 137
+  orig: 96, 137
+  offset: 0, 0
+  index: -1
+erduo
+  rotate: true
+  xy: 777, 204
+  size: 47, 76
+  orig: 47, 76
+  offset: 0, 0
+  index: -1
+guangquan
+  rotate: false
+  xy: 253, 18
+  size: 233, 233
+  orig: 233, 233
+  offset: 0, 0
+  index: -1
+huan
+  rotate: false
+  xy: 2, 2
+  size: 249, 249
+  orig: 249, 249
+  offset: 0, 0
+  index: -1
+lian
+  rotate: false
+  xy: 586, 92
+  size: 102, 92
+  orig: 102, 92
+  offset: 0, 0
+  index: -1
+mj
+  rotate: true
+  xy: 695, 176
+  size: 75, 80
+  orig: 75, 80
+  offset: 0, 0
+  index: -1
+weib
+  rotate: true
+  xy: 488, 21
+  size: 24, 35
+  orig: 24, 35
+  offset: 0, 0
+  index: -1
+z1
+  rotate: false
+  xy: 488, 186
+  size: 205, 65
+  orig: 205, 65
+  offset: 0, 0
+  index: -1

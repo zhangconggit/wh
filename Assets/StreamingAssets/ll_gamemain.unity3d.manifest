@@ -1,0 +1,70 @@
+ManifestFileVersion: 0
+CRC: 2671873329
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e5765a3013db21c3ad7ac9f0be8313af
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6552a1908c0fc71ecc12cc1cb9fa0498
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 61
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 908311327a080a14c9907c9a58af9c9e, type: 3}
+- Class: 114
+  Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 1741964061, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -2095666955, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 575553740, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -1200242548, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -900027084, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 1573420865, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 14633ed3d62630648b42f72338f412de, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e4caa914477b9d542bc9aeb57d110b28, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7ffbea39f9c10e84b849e95905319060, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d85b887af7e6c3f45a2e2d2920d641bc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 92128f3cb303cab4c8a24443c464b632, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e2f44ead385a2e7438458678839ed668, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/UI_Landlords/Ll_GameMain/LandlordsGame.prefab
+- Assets/Art/UI_Landlords/Ll_GameMain/Ll_GameMainPanel.prefab
+Dependencies:
+- Assets/StreamingAssets/common.unity3d

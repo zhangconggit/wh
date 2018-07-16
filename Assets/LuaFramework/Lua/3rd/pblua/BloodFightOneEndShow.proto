@@ -1,0 +1,27 @@
+syntax = "proto2";
+option java_package = "com.leyou.common.protobuf.BloodFight"; 
+option java_outer_classname = "BloodFightOneEndShow_pb"; 
+
+import "ChessInfo.proto";
+
+message BloodFightOneEndInfo{
+	optional int64 roleIndex = 1;
+	optional int32 jifen = 2; // 每局的积分 
+	optional int32 oneGangTime = 3; // 每局的杠次数
+	optional int32 oneDianPaoTime = 4; // 每局的点炮次数
+	repeated ChessInfo chessInfo = 5; // 牌的集合
+	repeated int32 huTypes = 6; // 胡的类型 1=自摸 2=胡 3=抢杠 4=杠上花 5=海底捞月
+	optional int32 fanZhong = 7; // 1=平胡 14=中张
+	optional int32 fanShu = 8; // 番数
+	optional int32 huTime = 9; // 第几胡
+}
+
+
+message BloodFightOneEndShowRes {
+	optional int32 endType = 1; // 当前局的结束类型  1=自摸 2=胡到最后一个 3=摸牌摸完了 4=解散房间 3个人点了同意 5=解散房间 时间到了
+	optional int32 zongJuShu = 2;
+	optional int32 currJuShu = 3;
+	optional int32 RoomMasterUid = 4;
+	repeated BloodFightOneEndInfo oneEndInfos = 5; // 每人结算的集合
+
+}

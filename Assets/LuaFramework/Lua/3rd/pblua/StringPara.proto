@@ -1,0 +1,12 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "StringPara_pb"; 
+
+
+
+message StringParaReq {
+    required string val = 1; // String接收的参数
+}
+
+message StringParaRes {
+    required string strs = 1; // String返回
+}

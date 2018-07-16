@@ -1,0 +1,35 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "ApplyDisRoomOperate_pb"; 
+
+message ApplyDisRoomOperateReq {
+	required int32 type = 1; // 1=同意 2=拒绝 
+}
+
+// 同意 
+message Agree{
+	optional int64 roleId = 1;
+}
+
+// 拒绝
+message DisAgree{
+	optional int32 code = 1;
+	optional string name = 2;
+}
+
+// 所有人都同意了
+message AllAgree{
+	optional int32 code = 1;
+	repeated string names = 2;
+}
+
+// 定时时间到
+message TimeEnd{
+	optional int32 code = 1;
+	optional int32 roomNum = 2;
+	optional int32 ms = 3;
+}
+
+message ApplyDisRoomOperateRes {
+	optional int32 type = 1; // 1=同意 2=拒绝 3=所有人都同意了 4=定时时间到
+    optional bytes data = 2;
+}

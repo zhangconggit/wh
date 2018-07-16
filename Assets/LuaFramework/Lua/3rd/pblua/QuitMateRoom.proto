@@ -1,0 +1,6 @@
+option java_package = "com.leyou.common.protobuf"; 
+option java_outer_classname = "QuitMateRoom_pb"; 
+
+message QuitMateRes{ 
+  optional int32 roleId = 1; 
+}
